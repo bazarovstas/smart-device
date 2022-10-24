@@ -11,13 +11,38 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <div class="main-header__logo-wrapper">
+        <div class="container">
+          <div class="main-header__wrapper">
+            <div class="main-header__logo-wrapper">
+              <a class="main-header__logo  logo-header">
+                <svg class="logo-header__image" width="55" height="55">
+                  <use xlink:href="img/sprite_auto.svg#logo-desktop-and-tablet"></use>
+                </svg>
+                <div class="main-header__heading-wrapper">
+                  <h1 class="main-header__heading" aria-label="Сайт компании по производству и монтажу печатных плат, а также поставке комплектующих.">Smart Device</h1>
+                  <p class="main-header__heading-small" aria-label="Слоган компании 'Smart Device'.">умные технологии</p>
+                </div>
+              </a>
+            </div>
 
+            <div class="main-header__email-wrapper">
+              <svg class="main-header__email-icon" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+              </svg>
+              <a class="main-header__email-link" href="mailto:info@sd.ru">info@sd.ru</a>
+            </div>
+
+            <div class="main-header__phone-wrapper">
+              <svg class="main-header__phone-icon" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <a class="main-header__phone-link" href="tel:+74950005252">+7 (495) 000 52 52</a>
+            </div>
+
+            <button class="btn  btn--main-header" type="button" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
+
+          </div>
         </div>
-        <div class="main-header__email-wrapper"></div>
-        <div class="main-header__phone-wrapper"></div>
-        <button class="btn btn--main-header"></button>
-
       </header>
 
       <main>

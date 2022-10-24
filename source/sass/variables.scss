@@ -17,11 +17,15 @@ $color-shades-of-whisper:           #ebebeb;
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+// Transparent
+
+$transparent-white-0-5:             rgba(255, 255, 255, 0.5);
+$transparent-black-0-15:            rgba(4, 20, 39, 0.15);
+$transparent-black-0-5:             rgba(4, 24, 39, 0.5);
+
 // Gradient
 
-$form-fill-input:                         rgba(4, 20, 39, 0.15);
-$form-fill:                               rgba(4, 24, 39, 0.5);
-
+$black-to-bottom:                   linear-gradient(to bottom, $color-default-black 85%, $color-transparent 100%);
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography

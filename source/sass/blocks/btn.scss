@@ -1,6 +1,7 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 10px 15px;
 
   color: $color-default-white;
 
@@ -23,4 +24,14 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  &--main-header {
+    color: $color-default-white;
+
+    text-transform: uppercase;
+    background-color: $color-transparent;
+    border: 1px solid $color-default-white;
+    border-radius: 3px;
+  }
 }
+
