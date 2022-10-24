@@ -26,12 +26,23 @@
   }
 
   &--main-header {
+    height: 40px;
+
+    font-family: $ff-roboto-condensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     color: $color-default-white;
+    letter-spacing: 0.05em;
 
     text-transform: uppercase;
     background-color: $color-transparent;
     border: 1px solid $color-default-white;
     border-radius: 3px;
+
+    @media (max-width: $vp-768) {
+      display: none;
+    }
   }
 }
 
