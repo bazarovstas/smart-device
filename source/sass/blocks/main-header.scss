@@ -1,11 +1,18 @@
 @import "./variables.scss";
 
 .main-header {
-  padding-top: 30px;
-  padding-bottom: 35px;
   min-width: 320px;
+  padding: 30px 0 35px 0;
 
   background: $black-to-bottom-gradient;
+
+  @media (max-width: $vp-1023) {
+    padding: 20px 0 25px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 10px 0 20px 0;
+  }
 }
 
 .main-header__wrapper {
@@ -15,24 +22,38 @@
   flex-wrap: wrap;
   max-width: 1220px;
   margin: 0 auto;
+  padding: 0 75px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     justify-content: flex-end;
+    padding: 0 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+  }
+}
+
+.main-header__logo-wrapper {
+  @media (max-width: $vp-1023) {
+    margin-right: auto;
   }
 }
 
 .main-header__logo {
   display: flex;
-  column-gap: 15px;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 55px;
 }
 
 .main-header__heading-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
 }
 
 .main-header__heading {
@@ -54,22 +75,43 @@
   color: $transparent-white-0-7;
 }
 
+
 .main-header__email-wrapper,
 .main-header__phone-wrapper {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
+  @media (max-width: $vp-1023) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-right: 15px;
+  }
 }
 
 .main-header__email-link,
 .main-header__phone-link {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  @media (max-width: $vp-1023) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-header__email-text,
+.main-header__phone-text {
+  margin: 0;
+
   font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $color-default-white;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     display: none;
   }
 }

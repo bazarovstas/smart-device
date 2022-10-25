@@ -20,8 +20,11 @@
           <div class="main-header__wrapper">
             <div class="main-header__logo-wrapper">
               <a class="main-header__logo  logo-header">
-                <svg class="logo-header__image" width="55" height="55">
+                <svg class="logo-header__image  logo-header__image--desktop-and-tablet" width="55" height="55">
                   <use xlink:href="img/sprite_auto.svg#logo-desktop-and-tablet"></use>
+                </svg>
+                <svg class="logo-header__image  logo-header__image--mobile" width="35" height="35">
+                  <use xlink:href="img/sprite_auto.svg#logo-mobile"></use>
                 </svg>
                 <div class="main-header__heading-wrapper">
                   <h1 class="main-header__heading" aria-label="Сайт компании по производству и монтажу печатных плат, а также поставке комплектующих.">Smart Device</h1>
@@ -31,17 +34,21 @@
             </div>
 
             <div class="main-header__email-wrapper">
-              <svg class="main-header__email-icon" width="20" height="20">
-                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
-              </svg>
-              <a class="main-header__email-link" href="mailto:info@sd.ru">info@sd.ru</a>
+              <a class="main-header__email-link" href="mailto:info@sd.ru">
+                <svg class="main-header__email-icon" width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+                </svg>
+                <p class="main-header__email-text">info@sd.ru</p>
+              </a>
             </div>
 
             <div class="main-header__phone-wrapper">
-              <svg class="main-header__phone-icon" width="20" height="20">
-                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
-              </svg>
-              <a class="main-header__phone-link" href="tel:+74950005252">+7 (495) 000 52 52</a>
+              <a class="main-header__phone-link" href="tel:+74950005252">
+                <svg class="main-header__phone-icon" width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+                </svg>
+                <p class="main-header__phone-text">+7 (495) 000 52 52</p>
+              </a>
             </div>
 
             <button class="btn  btn--main-header" type="button" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
