@@ -2,6 +2,12 @@
 
 .logo-footer {
   padding-bottom: 30px;
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
 }
 
 .logo-footer__link {
