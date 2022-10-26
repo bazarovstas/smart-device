@@ -7,7 +7,6 @@
 
 // Global
 // ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -15,12 +14,26 @@
 @import "global/utils";
 @import "global/container";
 
-// Blocks
+// Header
 // ---------------------------------
 @import "blocks/main-header";
 @import "blocks/logo-header";
+
+// Main
+// ---------------------------------
 @import "blocks/main-container";
 @import "blocks/promo";
+
+// Footer
+// ---------------------------------
+@import "blocks/main-footer";
+@import "blocks/logo-footer";
+@import "blocks/social";
+@import "blocks/footer-nav";
+@import "blocks/contacts";
+
+// Other blocks
+// ---------------------------------
 @import "blocks/btn";
 @import "blocks/modal";
 

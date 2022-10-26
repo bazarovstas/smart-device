@@ -13,17 +13,19 @@
     <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+
+
   <body>
     <div class="wrapper">
-      <header class="main-header">
+      <header class="main-header  header">
         <div class="container">
           <div class="main-header__wrapper">
             <div class="main-header__logo-wrapper">
-              <a class="main-header__logo  logo-header">
-                <svg class="logo-header__image  logo-header__image--desktop-and-tablet" width="55" height="55">
+              <a class="main-header__logo  logo-header" aria-label="Голубой логотип компании Smart Device, стилизованный под головной мозг в виде токопроводящего рисунка.">
+                <svg class="logo-header__image  logo-header__image--desktop-and-tablet" width="55" height="55" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#logo-desktop-and-tablet"></use>
                 </svg>
-                <svg class="logo-header__image  logo-header__image--mobile" width="35" height="35">
+                <svg class="logo-header__image  logo-header__image--mobile" width="35" height="35" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#logo-mobile"></use>
                 </svg>
                 <div class="main-header__heading-wrapper">
@@ -35,19 +37,19 @@
 
             <div class="main-header__email-wrapper">
               <a class="main-header__email-link" href="mailto:info@sd.ru">
-                <svg class="main-header__email-icon" width="20" height="20">
+                <svg class="main-header__email-icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-email"></use>
                 </svg>
-                <p class="main-header__email-text">info@sd.ru</p>
+                <p class="main-header__email-text" aria-label="Напишите нам письмо на электронную почту.">info@sd.ru</p>
               </a>
             </div>
 
             <div class="main-header__phone-wrapper">
               <a class="main-header__phone-link" href="tel:+74950005252">
-                <svg class="main-header__phone-icon" width="20" height="20">
+                <svg class="main-header__phone-icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                 </svg>
-                <p class="main-header__phone-text">+7 (495) 000 52 52</p>
+                <p class="main-header__phone-text" aria-label="Позвоните нам по телефону.">+7 (495) 000 52 52</p>
               </a>
             </div>
 
@@ -56,6 +58,7 @@
           </div>
         </div>
       </header>
+
 
       <main class="main-container">
         <section class="promo">
@@ -75,9 +78,95 @@
 
       </main>
 
-      <footer>
-        <div class="container">
 
+      <footer class="main-footer  footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__logo-and-social">
+              <div class="main-footer__logo  logo-footer">
+                <a class="logo-footer__link" aria-label="Голубой логотип компании Smart Device, стилизованный под головной мозг в виде токопроводящего рисунка.">
+                  <svg class="logo-footer__image" width="55" height="55" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite_auto.svg#logo-desktop-and-tablet"></use>
+                  </svg>
+                  <div class="logo-footer__heading-wrapper">
+                    <h2 class="logo-footer__heading" aria-label="Сайт компании по производству и монтажу печатных плат, а также поставке комплектующих.">Smart Device</h2>
+                    <p class="logo-footer__heading-small" aria-label="Слоган компании 'Smart Device'.">умные технологии</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="main-footer__social  social">
+                <h2 class="visually-hidden">Социальные сети</h2>
+
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon  social__icon-ok" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite_auto.svg#icon-social-ok"></use>
+                      </svg>
+                      <span class="visually-hidden">Ссылка на социальную сеть Одноклассники.</span>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon  social__icon-ok" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite_auto.svg#icon-social-vk"></use>
+                      </svg>
+                      <span class="visually-hidden">Ссылка на социальную сеть Вконтакте.</span>
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link" href="#">
+                      <svg class="social__icon  social__icon-ok" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+                        <use xlink:href="img/sprite_auto.svg#icon-social-pinterest"></use>
+                      </svg>
+                      <span class="visually-hidden">Ссылка на социальную сеть Pinterest.</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="main-footer__nav  footer-nav">
+              <div class="footer-nav__wrapper">
+                <h2 class="footer-nav__heading">Разделы сайта</h2>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">О Компании</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Продукты</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Производство печатных плат</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Монтаж печатных плат</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-nav__additional-list-wrapper">
+                <ul class="footer-nav__additional-list">
+                  <li class="footer-nav__additional-item"><a class="footer-nav__link" href="#">Комплектующие</a></li>
+                  <li class="footer-nav__additional-item"><a class="footer-nav__link" href="#">Доставка</a></li>
+                  <li class="footer-nav__additional-item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="main-footer__contacts  contacts">
+              <h2 class="contacts__heading">Наш офис</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="#">
+                    <address class="contacts__address">
+                      <p class="contacts__address-text">г. Мытищи, Олимпийский проспект, д.10</p>
+                    </address>
+                  </a>
+                </li>
+                <li class="contacts__item"><a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+                <li class="contacts__item"><a class="contacts__link" href="tel:+79253895829">+7 (925) 389-58-29</a></li>
+                <li class="contacts__item"><a class="contacts__link" href="tel:+79253647813">+7 (925) 364-78-13</a></li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </footer>
     </div>

@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+// временный стиль
+.main-footer * {
+  color: $color-white;
+}
+
+
+.main-footer {
+  background-color: $color-default-black;
+}
+
+.main-footer__wrapper {
+  display: flex;
+
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+.main-footer__nav h2 {
+  color: $color-white;
+}
+
+.main-footer__nav a {
+  color: $transparent-white-0-7;
+}
+
+.main-footer__contacts h2 {
+  color: $color-white;
+}

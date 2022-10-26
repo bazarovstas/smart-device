@@ -8,14 +8,17 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  // background-color: $color-default-black;
+
   .header,
   .footer {
     flex-shrink: 0;
   }
 
-  main {
-    flex-grow: 1;
-  }
+  // использовал margin-bottom: auto;
+  // main {
+  //   flex-grow: 1;
+  // }
 }
 
 .rouble {
