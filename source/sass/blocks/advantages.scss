@@ -1,0 +1,82 @@
+@import "./variables.scss";
+
+.advantages {
+  padding: 120px 0 125px 0;
+
+  background-color: $color-white;
+}
+
+.advantages__wrapper {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.advantages h3 {
+  margin: 0;
+  padding-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-deep-sky-blue;
+}
+
+.advantages p {
+  min-height: 120px;
+  margin: 0;
+
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-black;
+}
+
+.advantages ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages li {
+  position: relative;
+  padding: 40px 45px 35px 45px;
+
+  outline: 1px solid $color-shades-of-whisper;
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:hover h3,
+  &:hover p {
+    color: $color-default-white;
+  }
+
+  &:hover svg {
+    fill: $color-default-white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $color-deep-sky-blue;
+  }
+}
+
+.advantages svg {
+  margin-bottom: 20px;
+
+  fill: $color-deep-sky-blue;
+}
