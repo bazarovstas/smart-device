@@ -4,12 +4,28 @@
   padding: 120px 0 125px 0;
 
   background-color: $color-white;
+
+  @media (max-width: $vp-1023) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 50px 0;
+  }
 }
 
 .advantages__wrapper {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 80px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+  }
 }
 
 .advantages h3 {
@@ -20,6 +36,15 @@
   font-size: 24px;
   line-height: 34px;
   color: $color-deep-sky-blue;
+
+  @media (max-width: $vp-1023) {
+    line-height: 25px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantages p {
@@ -31,6 +56,13 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-black;
+
+  @media (max-width: $vp-767) {
+    min-height: 140px;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .advantages ul {
@@ -43,6 +75,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .advantages li {
@@ -73,10 +109,23 @@
     height: 100%;
     background-color: $color-deep-sky-blue;
   }
+
+  @media (max-width: $vp-1023) {
+    padding: 40px 30px 35px 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 30px 30px 35px 30px;
+  }
 }
 
 .advantages svg {
   margin-bottom: 20px;
 
   fill: $color-deep-sky-blue;
+
+  @media (max-width: $vp-767) {
+    width: 30px;
+    height: 30px;
+  }
 }
