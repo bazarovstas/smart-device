@@ -1,0 +1,64 @@
+@import "./variables.scss";
+
+.about-us {
+  margin-top: -1px;
+
+  background-color: $color-white;
+}
+
+.about-us__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 80px 100px 330px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 25px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 150px;
+    height: 320px;
+    background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet.png");
+  }
+}
+
+// удалить, когда будет js
+.about-us__spoiler-wrapper {
+  display: none;
+}
+
+.about-us h2 {
+  margin: 0;
+  padding: 5px 0 15px 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  color: $color-default-black;
+
+  cursor: default;
+}
+
+.about-us p {
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-black;
+
+  cursor: default;
+}

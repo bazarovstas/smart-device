@@ -44,5 +44,24 @@
       display: none;
     }
   }
+
+  &--about-us {
+    justify-content: center;
+    order: 1;
+    min-width: 180px;
+    max-width: max-content;
+    margin: 20px 0;
+    padding: 13px 15px;
+
+    font-family: $ff-roboto-condensed;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-deep-sky-blue;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 1px solid $color-deep-sky-blue;
+  }
 }
 

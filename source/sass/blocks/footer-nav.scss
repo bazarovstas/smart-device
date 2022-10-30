@@ -31,8 +31,9 @@
   line-height: 16px;
   color: $color-white;
   letter-spacing: 0.05em;
-
   text-transform: uppercase;
+
+  cursor: default;
 
   @media (max-width: $vp-767) {
     padding: 20px 0;
