@@ -120,21 +120,62 @@
         <section class="about-us">
           <div class="about-us__wrapper">
             <h2 class="about-us__heading">О компании</h2>
-            <button class="spoiler btn btn--about-us" type="button">Подробнее</button>
-            <p class="about-us__content">
+            <button class="spoiler  btn  btn--about-us" type="button" aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
+            <p class="about-us__content  about-us__content--first">
               Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
-            <p class="about-us__content">
-              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+            <p class="about-us__content  about-us__content--second">
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
             </p>
             <div class="about-us__spoiler-wrapper">
-              <p class="about-us__spoiler-content">
+              <p class="about-us__spoiler-content  about-us__spoiler-content--first">
+                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              </p>
+              <p class="about-us__spoiler-content  about-us__spoiler-content--second">
                 Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
               </p>
-              <p class="about-us__spoiler-content">
+              <p class="about-us__spoiler-content  about-us__spoiler-content--third">
                 Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section class="goods-services">
+          <div class="goods-services__wrapper">
+            <h2 class="goods-services__heading">Smart Device предлагает следующие товары и услуги</h2>
+            <ul class="goods-services__list">
+              <li class="goods-services__item  goods-services__item--production">
+                <a class="good-services__link" href="#">
+                  <p class="good-services__text">Производство<br>печатных плат</p>
+                  <span class="good-services__icon-wrapper">
+                    <svg class="good-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="goods-services__item  good-services__item--installation">
+                <a class="good-services__link" href="#">
+                  <p class="good-services__text">Монтаж печатных<br>плат</p>
+                  <span class="good-services__icon-wrapper">
+                    <svg class="good-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="goods-services__item  good-services__item--components">
+                <a class="good-services__link" href="#">
+                  <p class="good-services__text">Комплектующие<br>для светотехники</p>
+                  <span class="good-services__icon-wrapper">
+                    <svg class="good-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-button-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
 

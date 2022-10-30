@@ -15,11 +15,11 @@
   padding: 0 80px 100px 330px;
 
   @media (max-width: $vp-1023) {
-    padding: 0 50px;
+    padding: 0 50px 80px 230px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 25px;
+    padding: 0 25px 80px 25px;
   }
 
   &::before {
@@ -30,12 +30,29 @@
     width: 150px;
     height: 320px;
     background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet.png");
+
+    @media (max-width: $vp-1023) {
+      left: 50px;
+    }
+
+    @media (max-width: $vp-767) {
+      display: none;
+    }
   }
 }
 
-// удалить, когда будет js
-.about-us__spoiler-wrapper {
-  display: none;
+// изменить, когда будет js
+.about-us__spoiler-content {
+  &--first {
+    @media (max-width: $vp-767) {
+      display: none;
+    }
+  }
+
+  &--second,
+  &--third {
+    display: none;
+  }
 }
 
 .about-us h2 {
@@ -48,17 +65,39 @@
   color: $color-default-black;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 0 10px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .about-us p {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
   color: $color-default-black;
 
   cursor: default;
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about-us .about-us__content--second {
+  padding-bottom: 0;
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 15px;
+  }
 }
