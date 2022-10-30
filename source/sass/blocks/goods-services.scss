@@ -16,7 +16,28 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 25px 0 50px;
+    padding: 50px 25px 85px 25px;
+  }
+}
+
+.goods-services__heading {
+  &--mobile {
+    display: none;
+
+    @media (max-width: $vp-767) {
+      display: block;
+
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+      color: $color-white;
+    }
+  }
+
+  &--desktop-tablet {
+    @media (max-width: $vp-767) {
+      display: none;
+    }
   }
 }
 
@@ -31,9 +52,13 @@
   color: $color-white;
 
   cursor: default;
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 40px;
+  }
 }
 
-.goods-services ul {
+.goods-services__list-wrapper ul {
   display: flex;
   justify-content: center;
   column-gap: 4.6vw;
@@ -47,9 +72,14 @@
     column-gap: 0;
     row-gap: 3.91vw;
   }
+
+  @media (max-width: $vp-767) {
+    align-items: center;
+    row-gap: 9.38vw;
+  }
 }
 
-.goods-services li {
+.goods-services__list-wrapper li {
   position: relative;
   max-width: 350px;
   max-height: 650px;
@@ -106,13 +136,35 @@
       background-size: cover;
     }
   }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+    max-height: 100%;
+    width: 84.38vw;
+    height: 78.13vw;
+
+    &:nth-child(1) {
+      background: $color-default-black url("../img/backgrounds/bg-image-offers-1-mobile.jpg") no-repeat top center;
+      background-size: cover;
+    }
+
+    &:nth-child(2) {
+      background: $color-default-black url("../img/backgrounds/bg-image-offers-2-mobile.jpg") no-repeat top center;
+      background-size: cover;
+    }
+
+    &:nth-child(3) {
+      background: $color-default-black url("../img/backgrounds/bg-image-offers-3-mobile.jpg") no-repeat top center;
+      background-size: cover;
+    }
+  }
 }
 
-.goods-services a {
+.goods-services__list-wrapper a {
   position: relative;
 }
 
-.goods-services p {
+.goods-services__list-wrapper p {
   margin: 0;
   padding: 2.6vw 4.17vw 3.12vw 2.08vw;
   width: 100%;
@@ -127,9 +179,15 @@
   @media (max-width: $vp-1023) {
     padding: 5.21vw 7.82vw 5.21vw 5.86vw;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 9.38vw 12.5vw 9.38vw 9.38vw;
+
+    font-size: 18px;
+  }
 }
 
-.goods-services span {
+.goods-services__list-wrapper span {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -137,8 +195,8 @@
   justify-content: center;
   align-items: center;
 
-  max-width: 60px;
-  max-height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   width: 3.13vw;
   height: 3.13vw;
 
@@ -148,8 +206,28 @@
     width: 7.81vw;
     height: 7.81vw;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 40px;
+    min-height: 40px;
+    width: 12.5vw;
+    height: 12.5vw;
+  }
 }
 
-.goods-services svg {
+.goods-services__list-wrapper svg {
+  width: 0.35vw;
+  height: 0.7vw;
+
   fill: $color-white;
+
+  @media (max-width: $vp-1023) {
+    width: 0.7vw;
+    height: 1.4vw;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 1.3vw;
+    height: 2.6vw;
+  }
 }
