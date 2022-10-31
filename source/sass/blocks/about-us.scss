@@ -31,8 +31,20 @@
     height: 320px;
     background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet.png");
 
+    @media (min-width: $vp-1024) {
+      @include retina {
+        background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet@2x.png");
+        background-size: cover;
+      }
+    }
+
     @media (max-width: $vp-1023) {
       left: 50px;
+
+      @include retina {
+        background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet@2x.png");
+        background-size: cover;
+      }
     }
 
     @media (max-width: $vp-767) {

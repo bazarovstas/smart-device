@@ -6,12 +6,24 @@
   background: $color-default-black url("../img/backgrounds/bg-image-promo-desktop.jpg") no-repeat bottom;
   background-size: cover;
 
+  @media (min-width: $vp-1023) {
+    @include retina {
+      background: $color-default-black url("../img/backgrounds/bg-image-promo-desktop@2x.jpg") no-repeat bottom;
+      background-size: cover;
+    }
+  }
+
   @media (max-width: $vp-1023) {
     min-height: 560px;
     margin-top: -100px;
 
     background: $color-default-black url("../img/backgrounds/bg-image-promo-tablet.jpg") no-repeat bottom;
     background-size: cover;
+
+    @include retina {
+      background: $color-default-black url("../img/backgrounds/bg-image-promo-tablet@2x.jpg") no-repeat bottom;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $vp-767) {
@@ -20,6 +32,11 @@
 
     background: $color-default-black url("../img/backgrounds/bg-image-promo-mobile.jpg") no-repeat bottom;
     background-size: cover;
+
+    @include retina {
+      background: $color-default-black url("../img/backgrounds/bg-image-promo-mobile@2x.jpg") no-repeat bottom;
+      background-size: cover;
+    }
   }
 }
 

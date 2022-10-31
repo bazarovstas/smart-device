@@ -1456,6 +1456,35 @@ button,
   }
 */
 
+@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1023px) and (min-resolution: 144dpi), (min-width: 1023px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background: #041827 url("../img/backgrounds/bg-image-promo-desktop@2x.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .about-us__wrapper::before {
+    background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet@2x.png");
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(1) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-1-desktop@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(2) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-2-desktop@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(3) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-3-desktop@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1023px) {
   .main-header {
     position: static;
@@ -1652,6 +1681,33 @@ button,
 
   .btn--about-us {
     margin: 0;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background: #041827 url("../img/backgrounds/bg-image-promo-tablet@2x.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+
+  .about-us__wrapper::before {
+    background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet@2x.png");
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(1) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-1-tablet@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(2) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-2-tablet@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(3) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-3-tablet@2x.jpg") no-repeat top center;
+    background-size: cover;
   }
 }
 
@@ -1943,6 +1999,28 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background: #041827 url("../img/backgrounds/bg-image-promo-mobile@2x.jpg") no-repeat bottom;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(1) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-1-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(2) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-2-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  .goods-services__list-wrapper li:nth-child(3) {
+    background: #041827 url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
   }
 }
 
