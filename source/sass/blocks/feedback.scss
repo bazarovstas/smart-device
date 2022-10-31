@@ -1,10 +1,42 @@
 @import "./variables.scss";
 
 .feedback {
+  position: relative;
   width: 100vw;
   height: 43.75vw;
 
   background-color: $color-deep-sky-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 0% 100%, 50% 0%);
+    z-index: 0;
+
+    background-color: $transparent-black-0-5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 14%;
+    width: 32.24vw;
+    height: 18.02vw;
+    z-index: 1;
+
+    background: url("../img/backgrounds/paper-airplane-desktop.png") no-repeat;
+    background-size: contain;
+
+    @media (min-width: $vp-1024) {
+      @include retina {
+        background: url("../img/backgrounds/paper-airplane-desktop@2x.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .feedback__flex-wrapper {
@@ -19,6 +51,10 @@
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 80px 0 80px;
+}
+
+.feedback__flex-container {
+  z-index: 2;
 }
 
 .feedback h2 {
@@ -40,5 +76,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $color-white;
+  color: $transparent-white-0-8;
 }
