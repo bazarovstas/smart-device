@@ -1214,7 +1214,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }
@@ -1222,31 +1222,31 @@ button,
 .feedback-form__name input::-webkit-input-placeholder,
 .feedback-form__phone input::-webkit-input-placeholder,
 .feedback-form__question textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 .feedback-form__name input::-moz-placeholder,
 .feedback-form__phone input::-moz-placeholder,
 .feedback-form__question textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 .feedback-form__name input:-ms-input-placeholder,
 .feedback-form__phone input:-ms-input-placeholder,
 .feedback-form__question textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 .feedback-form__name input::-ms-input-placeholder,
 .feedback-form__phone input::-ms-input-placeholder,
 .feedback-form__question textarea::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 .feedback-form__name input::placeholder,
 .feedback-form__phone input::placeholder,
 .feedback-form__question textarea::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
 }
 
 .feedback-form__question textarea {
@@ -1877,7 +1877,7 @@ button,
   }
 
   .feedback__wrapper {
-    margin: 0 0 9.9% 0;
+    margin: 0 0 9.9%;
     padding: 50px;
   }
 
@@ -2183,6 +2183,74 @@ button,
   .goods-services__list-wrapper svg {
     width: 1.3vw;
     height: 2.6vw;
+  }
+
+  .feedback__wrapper {
+    margin: 0 0 10.6%;
+    padding: 50px 25px;
+  }
+
+  .feedback h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  .feedback p {
+    padding-bottom: 35px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .feedback-form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+
+  .feedback-form__phone {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .feedback-form__question {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    max-height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__button {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .feedback-form__accept-checkbox {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .feedback-form__button button {
+    min-width: 270px;
+    margin-bottom: 5px;
   }
 
   .main-footer {
