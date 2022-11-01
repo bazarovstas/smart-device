@@ -1062,7 +1062,6 @@ button,
 .feedback {
   position: relative;
   width: 100vw;
-  height: 43.75vw;
   background-color: #00b2ff;
 }
 
@@ -1089,6 +1088,12 @@ button,
   background-size: contain;
 }
 
+.feedback__wrapper {
+  max-width: 1380px;
+  margin: 10.2% auto;
+  padding: 0 80px;
+}
+
 .feedback__flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,13 +1104,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 43.75vw;
-}
-
-.feedback__wrapper {
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 0 80px 0 80px;
 }
 
 .feedback__flex-container {
@@ -1135,20 +1133,18 @@ button,
 .feedback-form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 47.76% 47.76%;
+  grid-template-columns: 47.76% 47.76%;
   grid-auto-rows: auto;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -webkit-column-gap: 4.48%;
+  -moz-column-gap: 4.48%;
+  column-gap: 4.48%;
   row-gap: 20px;
   max-width: 585px;
-  max-height: 420px;
 }
 
 .feedback-form__name,
 .feedback-form__phone {
-  max-width: 275px;
   min-height: 50px;
   width: 100%;
   background-color: rgba(4, 20, 39, 0.15);
@@ -1866,6 +1862,57 @@ button,
   .goods-services__list-wrapper svg {
     width: 0.7vw;
     height: 1.4vw;
+  }
+
+  .feedback {
+    min-height: 520px;
+  }
+
+  .feedback::before {
+    display: none;
+  }
+
+  .feedback::after {
+    display: none;
+  }
+
+  .feedback__wrapper {
+    margin: 0 0 9.9% 0;
+    padding: 50px;
+  }
+
+  .feedback__flex-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .feedback__flex-container {
+    width: 100%;
+  }
+
+  .feedback h2 {
+    padding-bottom: 5px;
+  }
+
+  .feedback p {
+    padding-bottom: 25px;
+  }
+
+  .feedback-form {
+    max-width: 100%;
+  }
+
+  .feedback-form__name,
+  .feedback-form__phone {
+    max-width: 100%;
+  }
+
+  .feedback-form__question {
+    max-height: 155px;
   }
 
   .main-footer {
