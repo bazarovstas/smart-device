@@ -61,7 +61,9 @@
 .goods-services__list-wrapper ul {
   display: flex;
   justify-content: center;
-  column-gap: 4.6vw;
+  flex-wrap: wrap;
+  column-gap: 4.4vw;
+  row-gap: 4.4vw;
   margin: 0;
   padding: 0;
 
@@ -86,7 +88,7 @@
   width: 18.2vw;
   height: 34vw;
 
-  &:nth-child(1) {
+  &:nth-child(n) {
     background: $color-default-black url("../img/backgrounds/bg-image-offers-1-desktop.jpg") no-repeat top center;
     background-size: cover;
 
@@ -98,7 +100,7 @@
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     background: $color-default-black url("../img/backgrounds/bg-image-offers-2-desktop.jpg") no-repeat top center;
     background-size: cover;
 
@@ -110,7 +112,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     background: $color-default-black url("../img/backgrounds/bg-image-offers-3-desktop.jpg") no-repeat top center;
     background-size: cover;
 
@@ -141,7 +143,7 @@
     width: 87.23vw;
     height: 32.55vw;
 
-    &:nth-child(1) {
+    &:nth-child(n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-1-tablet.jpg") no-repeat top center;
       background-size: cover;
 
@@ -151,7 +153,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-2-tablet.jpg") no-repeat top center;
       background-size: cover;
 
@@ -161,7 +163,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-3-tablet.jpg") no-repeat top center;
       background-size: cover;
 
@@ -178,7 +180,7 @@
     width: 84.38vw;
     height: 78.13vw;
 
-    &:nth-child(1) {
+    &:nth-child(n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-1-mobile.jpg") no-repeat top center;
       background-size: cover;
 
@@ -188,7 +190,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-2-mobile.jpg") no-repeat top center;
       background-size: cover;
 
@@ -198,7 +200,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       background: $color-default-black url("../img/backgrounds/bg-image-offers-3-mobile.jpg") no-repeat top center;
       background-size: cover;
 
@@ -225,6 +227,8 @@
   font-size: 20px;
   line-height: 30px;
   color: $color-white;
+
+  overflow: hidden;
 
   @media (max-width: $vp-1023) {
     padding: 5.21vw 7.82vw 5.21vw 5.86vw;

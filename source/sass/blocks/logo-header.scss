@@ -1,14 +1,10 @@
 @import "./variables.scss";
 
 .logo-header__image {
-  margin-right: 15px;
+  display: block;
 
-  &--desktop-and-tablet {
-    display: block;
-
-    @media (max-width: $vp-767) {
-      display: none;
-    }
+  @media (max-width: $vp-767) {
+    display: none;
   }
 
   &--mobile {

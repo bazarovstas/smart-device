@@ -645,20 +645,26 @@ button,
 }
 
 .main-header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  row-gap: 15px;
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 80px;
+}
+
+.main-header__wrapper:nth-of-type(2) {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .main-header__logo {
@@ -668,35 +674,6 @@ button,
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.main-header__heading-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.main-header__heading {
-  margin: 0;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #f2f5f6;
-  cursor: default;
-}
-
-.main-header__heading-small {
-  margin: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  cursor: default;
 }
 
 .main-header__email-link,
@@ -726,10 +703,6 @@ button,
 }
 
 .logo-header__image {
-  margin-right: 15px;
-}
-
-.logo-header__image--desktop-and-tablet {
   display: block;
 }
 
@@ -976,9 +949,12 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-column-gap: 4.6vw;
-  -moz-column-gap: 4.6vw;
-  column-gap: 4.6vw;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 4.4vw;
+  -moz-column-gap: 4.4vw;
+  column-gap: 4.4vw;
+  row-gap: 4.4vw;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -992,17 +968,17 @@ button,
   height: 34vw;
 }
 
-.goods-services__list-wrapper li:nth-child(1) {
+.goods-services__list-wrapper li:nth-child(n) {
   background: #041827 url("../img/backgrounds/bg-image-offers-1-desktop.jpg") no-repeat top center;
   background-size: cover;
 }
 
-.goods-services__list-wrapper li:nth-child(2) {
+.goods-services__list-wrapper li:nth-child(2n) {
   background: #041827 url("../img/backgrounds/bg-image-offers-2-desktop.jpg") no-repeat top center;
   background-size: cover;
 }
 
-.goods-services__list-wrapper li:nth-child(3) {
+.goods-services__list-wrapper li:nth-child(3n) {
   background: #041827 url("../img/backgrounds/bg-image-offers-3-desktop.jpg") no-repeat top center;
   background-size: cover;
 }
@@ -1031,6 +1007,7 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .goods-services__list-wrapper span {
@@ -1110,6 +1087,7 @@ button,
 }
 
 .feedback h2 {
+  max-width: 585px;
   margin: 0;
   padding-bottom: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1120,6 +1098,7 @@ button,
 }
 
 .feedback p {
+  max-width: 585px;
   margin: 0;
   padding-bottom: 35px;
   font-family: "PT Mono", "Courier New", monospace;
@@ -1317,29 +1296,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.logo-footer__image {
-  margin-right: 15px;
-}
-
-.logo-footer__heading-wrapper h2 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #f2f5f6;
-  cursor: default;
-}
-
-.logo-footer__heading-wrapper p {
-  margin: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  cursor: default;
 }
 
 .social ul {
@@ -1876,17 +1832,17 @@ button,
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(1) {
+  .goods-services__list-wrapper li:nth-child(n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-1-desktop@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(2) {
+  .goods-services__list-wrapper li:nth-child(2n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-2-desktop@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(3) {
+  .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-desktop@2x.jpg") no-repeat top center;
     background-size: cover;
   }
@@ -2012,17 +1968,17 @@ button,
     height: 32.55vw;
   }
 
-  .goods-services__list-wrapper li:nth-child(1) {
+  .goods-services__list-wrapper li:nth-child(n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-1-tablet.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(2) {
+  .goods-services__list-wrapper li:nth-child(2n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-2-tablet.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(3) {
+  .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-tablet.jpg") no-repeat top center;
     background-size: cover;
   }
@@ -2162,17 +2118,17 @@ button,
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(1) {
+  .goods-services__list-wrapper li:nth-child(n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-1-tablet@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(2) {
+  .goods-services__list-wrapper li:nth-child(2n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-2-tablet@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(3) {
+  .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-tablet@2x.jpg") no-repeat top center;
     background-size: cover;
   }
@@ -2187,15 +2143,11 @@ button,
     padding: 0 25px;
   }
 
-  .main-header__heading-wrapper {
-    display: none;
-  }
-
   .main-header__phone-wrapper {
     margin-right: 10px;
   }
 
-  .logo-header__image--desktop-and-tablet {
+  .logo-header__image {
     display: none;
   }
 
@@ -2338,17 +2290,17 @@ button,
     height: 78.13vw;
   }
 
-  .goods-services__list-wrapper li:nth-child(1) {
+  .goods-services__list-wrapper li:nth-child(n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-1-mobile.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(2) {
+  .goods-services__list-wrapper li:nth-child(2n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-2-mobile.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(3) {
+  .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-mobile.jpg") no-repeat top center;
     background-size: cover;
   }
@@ -2554,17 +2506,17 @@ button,
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(1) {
+  .goods-services__list-wrapper li:nth-child(n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-1-mobile@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(2) {
+  .goods-services__list-wrapper li:nth-child(2n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-2-mobile@2x.jpg") no-repeat top center;
     background-size: cover;
   }
 
-  .goods-services__list-wrapper li:nth-child(3) {
+  .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg") no-repeat top center;
     background-size: cover;
   }
