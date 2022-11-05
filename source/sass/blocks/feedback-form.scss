@@ -132,6 +132,7 @@
   cursor: pointer;
 
   @media (max-width: $vp-767) {
+    width: 100%;
     min-width: 270px;
     margin-bottom: 5px;
   }

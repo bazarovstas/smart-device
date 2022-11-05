@@ -885,7 +885,7 @@ button,
 }
 
 .about-us {
-  margin-top: -1px;
+  margin-top: -2px;
   background-color: #ffffff;
 }
 
@@ -1061,7 +1061,6 @@ button,
 
 .feedback {
   position: relative;
-  width: 100vw;
   background-color: #00b2ff;
 }
 
@@ -2228,6 +2227,10 @@ button,
   }
 
   .promo a {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
     margin-left: 0;
     padding: 10px 30px;
     font-size: 14px;
@@ -2431,6 +2434,7 @@ button,
   }
 
   .feedback-form__button button {
+    width: 100%;
     min-width: 270px;
     margin-bottom: 5px;
   }
@@ -2520,6 +2524,7 @@ button,
   }
 
   .btn--about-us {
+    max-width: 55.56%;
     min-width: 160px;
     padding: 8px 15px;
   }

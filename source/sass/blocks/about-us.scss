@@ -1,7 +1,8 @@
 @import "./variables.scss";
 
 .about-us {
-  margin-top: -1px;
+  // между блоками полоса, которую я не смог убрать
+  margin-top: -2px;
 
   background-color: $color-white;
 }
