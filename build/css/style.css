@@ -962,10 +962,10 @@ button,
 
 .goods-services__list-wrapper li {
   position: relative;
-  max-width: 350px;
-  max-height: 650px;
   width: 18.2vw;
   height: 34vw;
+  max-width: 350px;
+  max-height: 650px;
 }
 
 .goods-services__list-wrapper li:nth-child(n) {
@@ -998,10 +998,10 @@ button,
 }
 
 .goods-services__list-wrapper p {
-  margin: 0;
-  padding: 2.6vw 4.17vw 3.12vw 2.08vw;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 2.6vw 4.17vw 3.12vw 2.08vw;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -2004,10 +2004,10 @@ button,
   }
 
   .goods-services__list-wrapper li {
-    max-width: 100%;
-    max-height: 100%;
     width: 87.23vw;
     height: 32.55vw;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .goods-services__list-wrapper li:nth-child(n) {
@@ -2211,6 +2211,9 @@ button,
   }
 
   .main-header__wrapper {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     padding: 0 25px;
   }
 
@@ -2234,17 +2237,18 @@ button,
   }
 
   .promo__wrapper {
-    margin: 48% auto 57.5% auto;
+    margin: 47% auto 60% auto;
     padding: 0 25px;
   }
 
   .promo h2 {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     font-size: 36px;
     line-height: 42px;
   }
 
   .promo p {
+    padding-bottom: 46px;
     font-size: 14px;
     line-height: 21px;
   }
@@ -2277,8 +2281,9 @@ button,
   }
 
   .advantages h3 {
+    padding-bottom: 7px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 140%;
   }
 
   .advantages p {
@@ -2290,15 +2295,33 @@ button,
   .advantages ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
   .advantages li {
+    display: block;
+    min-height: 340px;
     padding: 30px 30px 35px 30px;
+  }
+
+  .advantages li:nth-child(3n),
+  .advantages li:nth-child(4n) {
+    min-height: 325px;
+  }
+
+  .advantages li:nth-child(3n) > h3,
+  .advantages li:nth-child(4n) > h3 {
+    padding-bottom: 15px;
   }
 
   .advantages svg {
     width: 30px;
     height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .about-us {
+    margin-top: -3px;
   }
 
   .about-us__wrapper {
@@ -2319,8 +2342,9 @@ button,
   }
 
   .about-us p {
+    padding-bottom: 18px;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18.8px;
   }
 
   .about-us .about-us__content--second {
@@ -2328,7 +2352,7 @@ button,
   }
 
   .goods-services__wrapper {
-    padding: 50px 25px 85px 25px;
+    padding: 45px 25px 85px 25px;
   }
 
   .goods-services__heading--mobile {
@@ -2344,7 +2368,7 @@ button,
   }
 
   .goods-services h2 {
-    padding-bottom: 40px;
+    padding-bottom: 29px;
   }
 
   .goods-services__list-wrapper ul {
@@ -2355,10 +2379,10 @@ button,
   }
 
   .goods-services__list-wrapper li {
-    max-width: 100%;
-    max-height: 100%;
     width: 84.38vw;
     height: 78.13vw;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .goods-services__list-wrapper li:nth-child(n) {
@@ -2377,7 +2401,7 @@ button,
   }
 
   .goods-services__list-wrapper p {
-    padding: 9.38vw 12.5vw 9.38vw 9.38vw;
+    padding: 8vw 12.5vw 9.38vw 9.38vw;
     font-size: 18px;
   }
 
@@ -2394,8 +2418,8 @@ button,
   }
 
   .feedback__wrapper {
-    margin: 0 0 10.6%;
-    padding: 50px 25px;
+    margin: 0 0 12%;
+    padding: 46px 25px 50px 25px;
   }
 
   .feedback h2 {
@@ -2456,10 +2480,14 @@ button,
     grid-column: 1/2;
   }
 
+  .feedback-form__question textarea {
+    padding: 24px 15px 25px 15px;
+  }
+
   .feedback-form__button button {
     width: 100%;
     min-width: 270px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .main-footer {
@@ -2494,10 +2522,19 @@ button,
     padding-bottom: 15px;
   }
 
+  .logo-footer__link {
+    margin-right: 5px;
+  }
+
+  .social {
+    margin-top: 0;
+  }
+
   .social ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-right: 12px;
     padding-bottom: 25px;
   }
 

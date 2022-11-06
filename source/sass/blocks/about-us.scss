@@ -5,6 +5,10 @@
   margin-top: -2px;
 
   background-color: $color-white;
+
+  @media (max-width: $vp-767) {
+    margin-top: -3px;
+  }
 }
 
 .about-us__wrapper {
@@ -108,8 +112,10 @@
   }
 
   @media (max-width: $vp-767) {
+    padding-bottom: 18px;
+
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18.8px;
   }
 }
 

@@ -46,6 +46,7 @@
   }
 
   @media (max-width: $vp-767) {
+    align-items: flex-end;
     padding: 0 25px;
   }
 }

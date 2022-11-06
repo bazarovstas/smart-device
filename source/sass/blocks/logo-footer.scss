@@ -16,4 +16,8 @@
 
 .logo-footer__link {
   display: flex;
+
+  @media (max-width: $vp-767) {
+    margin-right: 5px;
+  }
 }
