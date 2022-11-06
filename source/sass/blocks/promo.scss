@@ -2,6 +2,7 @@
 
 .promo {
   min-height: 640px;
+  margin-top: -2px;
 
   background: $color-default-black url("../img/backgrounds/bg-image-promo-desktop.jpg") no-repeat bottom;
   background-size: cover;
@@ -42,7 +43,7 @@
 
 .promo__wrapper {
   max-width: 1380px;
-  margin: 15% auto 15.6% auto;
+  margin: 16% auto 14.7% auto;
   padding: 0 75px;
 
   @media (max-width: $vp-1023) {
@@ -66,7 +67,7 @@
 
 .promo h2 {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 
   font-weight: 700;
   font-size: 80px;
@@ -95,7 +96,7 @@
 .promo p {
   max-width: 685px;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 49px;
 
   font-family: $ff-ptmono;
   font-weight: 400;

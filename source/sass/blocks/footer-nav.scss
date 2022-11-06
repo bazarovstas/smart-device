@@ -3,6 +3,7 @@
 .footer-nav {
   display: flex;
   column-gap: 30px;
+  margin-left: 33px;
 
   @media (max-width: $vp-1023) {
     flex-direction: column;
@@ -24,7 +25,7 @@
 
 .footer-nav h2 {
   margin: 0;
-  padding: 5px 0 20px 0;
+  padding: 5px 0 22px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -49,7 +50,7 @@
 }
 
 .footer-nav li {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
   &:last-child {
     padding-bottom: 0;

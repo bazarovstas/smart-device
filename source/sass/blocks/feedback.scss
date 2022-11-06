@@ -15,7 +15,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 0% 100%, 50% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 50.5% 0%);
     z-index: 0;
 
     background-color: $transparent-black-0-5;
@@ -28,10 +28,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30%;
-    left: 14%;
-    width: 32.24vw;
-    height: 18.02vw;
+    top: 29%;
+    left: 18%;
+    width: 27vw;
+    height: 15vw;
     z-index: 1;
 
     background: url("../img/backgrounds/paper-airplane-desktop.png") no-repeat;
@@ -52,7 +52,7 @@
 
 .feedback__wrapper {
   max-width: 1380px;
-  margin: 10.2% auto;
+  margin: 8.6% auto 13% auto;
   padding: 0 80px;
 
   @media (max-width: $vp-1023) {
@@ -78,6 +78,7 @@
 }
 
 .feedback__flex-container {
+  margin-right: 5px;
   z-index: 2;
 
   @media (max-width: $vp-1023) {
@@ -88,7 +89,7 @@
 .feedback h2 {
   max-width: 585px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 
   font-family: $ff-roboto-condensed;
   font-weight: 400;
@@ -110,7 +111,7 @@
 
 .feedback p {
   max-width: 585px;
-  margin: 0;
+  margin: 0 0 0 5px;
   padding-bottom: 35px;
 
   font-family: $ff-ptmono;
@@ -129,4 +130,8 @@
     font-size: 14px;
     line-height: 18px;
   }
+}
+
+.feedback__form-wrapper {
+  margin-left: 5px;
 }
