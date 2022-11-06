@@ -1,9 +1,17 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {toggleModal} from './modal';
+import {scrollToForm} from './scroll-to-form';
+import {showSpoiler} from './spoiler';
+import {toggleAccordion} from './accordion';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  toggleModal();
+  scrollToForm();
+  showSpoiler();
+  toggleAccordion();
 
   // Utils
   // ---------------------------------

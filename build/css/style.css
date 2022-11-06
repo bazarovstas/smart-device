@@ -756,19 +756,6 @@ button,
   cursor: default;
 }
 
-.promo a {
-  margin: 0;
-  padding: 15px 25px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #f2f5f6;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background-color: #00b2ff;
-  border-radius: 3px;
-}
-
 .promo__link-text--long {
   display: block;
 }
@@ -914,6 +901,10 @@ button,
 
 .about-us .about-us__content--second {
   padding-bottom: 0;
+}
+
+.spoiler-is-active {
+  display: block;
 }
 
 .goods-services {
@@ -1349,6 +1340,16 @@ button,
   margin-left: 33px;
 }
 
+.footer-nav__button-wrapper {
+  position: relative;
+}
+
+.footer-nav button {
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+
 .footer-nav h2 {
   margin: 0;
   padding: 5px 0 22px 0;
@@ -1386,6 +1387,16 @@ button,
 
 .footer-nav__additional-list-wrapper ul {
   margin-top: 42px;
+}
+
+.contacts__button-wrapper {
+  position: relative;
+}
+
+.contacts button {
+  display: none;
+  border: none;
+  cursor: pointer;
 }
 
 .contacts h2 {
@@ -1470,6 +1481,19 @@ button,
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #f2f5f6;
+  border-radius: 3px;
+}
+
+.btn--promo {
+  margin: 0;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f2f5f6;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #00b2ff;
   border-radius: 3px;
 }
 
@@ -1929,11 +1953,6 @@ button,
     padding-bottom: 56px;
   }
 
-  .promo a {
-    margin-left: 7%;
-    padding: 17px 25px;
-  }
-
   .advantages {
     padding: 80px 0;
   }
@@ -2157,16 +2176,18 @@ button,
     margin-top: 0;
   }
 
-  .contacts {
-    margin-top: 5px;
-  }
-
   .contacts h2 {
+    margin-top: 5px;
     padding: 0 0 25px 0;
   }
 
   .btn--main-header {
     display: none;
+  }
+
+  .btn--promo {
+    margin-left: 7%;
+    padding: 17px 25px;
   }
 
   .btn--about-us {
@@ -2251,17 +2272,6 @@ button,
     padding-bottom: 46px;
     font-size: 14px;
     line-height: 21px;
-  }
-
-  .promo a {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0;
-    padding: 10px 30px;
-    font-size: 14px;
-    line-height: 17px;
   }
 
   .promo__link-text--long {
@@ -2542,6 +2552,22 @@ button,
     padding-bottom: 20px;
   }
 
+  .footer-nav--closed {
+    padding-bottom: 0;
+  }
+
+  .footer-nav--closed .footer-nav__accordion-button {
+    background-image: url("../img/sprite/icon-plus.svg");
+  }
+
+  .footer-nav--closed .footer-nav__list {
+    display: none;
+  }
+
+  .footer-nav--closed .footer-nav__additional-list {
+    display: none;
+  }
+
   .footer-nav::before {
     content: "";
     position: absolute;
@@ -2551,7 +2577,20 @@ button,
     background-color: rgba(255, 255, 255, 0.65);
   }
 
+  .footer-nav button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-minus.svg");
+    display: block;
+    z-index: 1;
+  }
+
   .footer-nav h2 {
+    position: relative;
     padding: 20px 0;
   }
 
@@ -2570,6 +2609,35 @@ button,
     background-color: rgba(255, 255, 255, 0.65);
   }
 
+  .contacts--closed {
+    padding-bottom: 0;
+  }
+
+  .contacts--closed .contacts__accordion-button {
+    background-image: url("../img/sprite/icon-plus.svg");
+  }
+
+  .contacts--closed .contacts__list {
+    display: none;
+  }
+
+  .contacts button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-minus.svg");
+    display: block;
+    z-index: 1;
+  }
+
+  .contacts h2 {
+    position: relative;
+    padding: 20px 0 15px 0;
+  }
+
   .contacts ul {
     margin-bottom: 20px;
   }
@@ -2581,6 +2649,17 @@ button,
   .contacts a {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .btn--promo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .btn--about-us {
@@ -2627,6 +2706,23 @@ button,
   .goods-services__list-wrapper li:nth-child(3n) {
     background: #041827 url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg") no-repeat top center;
     background-size: cover;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .footer-nav h2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/sprite/icon-minus.svg");
+  }
+
+  .contacts--closed .contacts__heading {
+    margin-top: 0;
+    padding: 20px 0 20px 0;
   }
 }
 

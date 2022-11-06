@@ -50,7 +50,7 @@
               </a>
             </div>
 
-            <button class="btn  btn--main-header" type="button" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
+            <button class="btn  btn--main-header" data-open-modal-button  type="button" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
 
           </div>
         </div>
@@ -63,10 +63,10 @@
             <div class="promo__container">
               <h2 class="promo__heading">Печатные платы</h2>
               <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="promo__link btn" href="#" aria-label="Перейти в раздел заполнения формы вопроса.">
+              <button class="promo__link  btn  btn--promo" type="button" href="#" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
                 <span class="promo__link-text  promo__link-text--short">Бесплатная консультация</span>
                 <span class="promo__link-text  promo__link-text--long">Получить бесплатную консультацию</span>
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -117,7 +117,7 @@
         <section class="about-us">
           <div class="about-us__wrapper">
             <h2 class="about-us__heading">О компании</h2>
-            <button class="spoiler  btn  btn--about-us" type="button" aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
+            <button class="btn  btn--about-us" type="button" data-spoiler-button  aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
             <p class="about-us__content  about-us__content--first">
               Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
             </p>
@@ -125,13 +125,13 @@
               Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
             </p>
             <div class="about-us__spoiler-wrapper">
-              <p class="about-us__spoiler-content  about-us__spoiler-content--first">
+              <p class="about-us__spoiler-content  about-us__spoiler-content--first" data-spoiler-1>
                 Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </p>
-              <p class="about-us__spoiler-content  about-us__spoiler-content--second">
+              <p class="about-us__spoiler-content  about-us__spoiler-content--second" data-spoiler-2>
                 Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
               </p>
-              <p class="about-us__spoiler-content  about-us__spoiler-content--third">
+              <p class="about-us__spoiler-content  about-us__spoiler-content--third" data-spoiler-3>
                 Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
               </p>
             </div>
@@ -181,7 +181,7 @@
           </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-scroll-to-form>
           <div class="feedback__wrapper">
             <div class="feedback__flex-wrapper">
               <div class="feedback__flex-container">
@@ -267,8 +267,13 @@
               </div>
             </div>
 
-            <div class="main-footer__nav  footer-nav">
+            <div class="main-footer__nav  footer-nav" data-accordion="1">
               <div class="footer-nav__wrapper">
+                <div class="footer-nav__button-wrapper">
+                  <button class="footer-nav__accordion-button" type="button">
+                    <span class="visually-hidden">Переключить блок меню</span>
+                  </button>
+                </div>
                 <h2 class="footer-nav__heading">Разделы сайта</h2>
                 <ul class="footer-nav__list">
                   <li class="footer-nav__item">
@@ -301,7 +306,12 @@
               </div>
             </div>
 
-            <div class="main-footer__contacts  contacts">
+            <div class="main-footer__contacts  contacts" data-accordion="2">
+              <div class="contacts__button-wrapper">
+                <button class="contacts__accordion-button" type="button">
+                  <span class="visually-hidden">Переключить блок меню</span>
+                </button>
+              </div>
               <h2 class="contacts__heading">Наш офис</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
@@ -347,7 +357,7 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <button class="modal__close-btn  btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <button class="modal__close-btn  btn-reset" type="button" data-close-modal-button  aria-label="Закрыть попап">
             <svg width="15" height="15" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
@@ -361,7 +371,7 @@
 
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="modal-form__name">
-                <input id="modal-form-name-field" type="text" placeholder="Имя">
+                <input id="modal-form-name-field" type="text" placeholder="Имя" data-modal-form="name">
                 <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
               </div>
               <div class="modal-form__phone">

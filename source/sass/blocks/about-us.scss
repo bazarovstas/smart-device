@@ -58,7 +58,7 @@
   }
 }
 
-// изменить, когда будет js
+
 .about-us__spoiler-content {
   &--first {
     @media (max-width: $vp-767) {
@@ -125,4 +125,8 @@
   @media (max-width: $vp-767) {
     padding-bottom: 15px;
   }
+}
+
+.spoiler-is-active {
+  display: block;
 }

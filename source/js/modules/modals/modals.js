@@ -135,6 +135,9 @@ export class Modals {
 
   open(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
+    // focus
+    const inputModal = modal.querySelector('[data-modal-form="name"]');
+    // focus
 
     if (!modal || modal.classList.contains('is-active')) {
       return;
@@ -168,6 +171,13 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
+
+      // focus
+      if (inputModal) {
+        inputModal.focus();
+      }
+      // focus
+
     }, this._eventTimeout);
   }
 
