@@ -41,6 +41,7 @@
   @media (max-width: $vp-1023) {
     column-gap: 0;
     justify-content: flex-end;
+    align-items: flex-start;
     padding: 0 50px;
   }
 

@@ -1,5 +1,11 @@
 @import "./variables.scss";
 
+.social {
+  @media (max-width: $vp-1023) {
+    margin-top: 5px;
+  }
+}
+
 .social ul {
   display: flex;
   margin: 0;
@@ -20,6 +26,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:last-child > a {
+    @media (max-width: $vp-1023) {
+      justify-content: flex-end;
+    }
   }
 }
 

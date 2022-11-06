@@ -1875,6 +1875,9 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 0 50px;
   }
 
@@ -1908,7 +1911,7 @@ button,
   }
 
   .promo__wrapper {
-    margin: 23.5% auto 28.1% auto;
+    margin: 23.4% auto 26.5% auto;
     padding: 0 50px;
   }
 
@@ -1923,11 +1926,12 @@ button,
   }
 
   .promo p {
-    padding-bottom: 50px;
+    padding-bottom: 56px;
   }
 
   .promo a {
-    margin-left: 6%;
+    margin-left: 7%;
+    padding: 17px 25px;
   }
 
   .advantages {
@@ -1939,27 +1943,53 @@ button,
   }
 
   .advantages h3 {
-    line-height: 25px;
+    padding-bottom: 9px;
+    line-height: 33.7px;
+  }
+
+  .advantages p {
+    line-height: 21.6px;
+  }
+
+  .advantages ul {
+    row-gap: 29px;
   }
 
   .advantages li {
-    padding: 40px 30px 35px 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 360px;
+    padding: 40px 30px 32px 45px;
   }
 
   .about-us__wrapper {
-    padding: 0 50px 80px 230px;
+    padding: 0 50px 80px 225px;
   }
 
   .about-us__wrapper::before {
-    left: 50px;
+    left: 45px;
   }
 
   .about-us h2 {
-    padding: 0 0 10px 0;
+    padding: 0 0 12px 0;
+  }
+
+  .about-us p {
+    padding-bottom: 21px;
+    line-height: 21.5px;
   }
 
   .goods-services__wrapper {
-    padding: 60px 50px 75px 50px;
+    padding: 55px 50px 75px 50px;
+  }
+
+  .goods-services h2 {
+    padding-bottom: 38px;
   }
 
   .goods-services__list-wrapper ul {
@@ -1996,7 +2026,7 @@ button,
   }
 
   .goods-services__list-wrapper p {
-    padding: 5.21vw 7.82vw 5.21vw 5.86vw;
+    padding: 4.8vw 7.82vw 5.21vw 5.86vw;
   }
 
   .goods-services__list-wrapper span {
@@ -2023,7 +2053,7 @@ button,
 
   .feedback__wrapper {
     margin: 0 0 9.9%;
-    padding: 50px;
+    padding: 45px 50px 50px 50px;
   }
 
   .feedback__flex-wrapper {
@@ -2037,14 +2067,20 @@ button,
 
   .feedback__flex-container {
     width: 100%;
+    margin-right: 0;
   }
 
   .feedback h2 {
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
 
   .feedback p {
+    margin: 0;
     padding-bottom: 25px;
+  }
+
+  .feedback__form-wrapper {
+    margin-left: 0;
   }
 
   .feedback-form {
@@ -2054,6 +2090,14 @@ button,
   .feedback-form__name,
   .feedback-form__phone {
     max-width: 100%;
+  }
+
+  .feedback-form__button {
+    margin-top: 1px;
+  }
+
+  .feedback-form__question textarea {
+    padding: 33px 15px 25px 15px;
   }
 
   .main-footer {
@@ -2083,23 +2127,42 @@ button,
     grid-row: 1/2;
   }
 
+  .logo-footer {
+    padding-bottom: 31px;
+  }
+
+  .social {
+    margin-top: 5px;
+  }
+
+  .social li:last-child > a {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
   .footer-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .footer-nav li:last-child {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   .footer-nav__additional-list-wrapper ul {
     margin-top: 0;
   }
 
+  .contacts {
+    margin-top: 5px;
+  }
+
   .contacts h2 {
-    padding: 20px 0 20px 0;
+    padding: 0 0 25px 0;
   }
 
   .btn--main-header {

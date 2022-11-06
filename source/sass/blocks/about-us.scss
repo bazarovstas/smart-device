@@ -16,7 +16,7 @@
   padding: 0 80px 100px 330px;
 
   @media (max-width: $vp-1023) {
-    padding: 0 50px 80px 230px;
+    padding: 0 50px 80px 225px;
   }
 
   @media (max-width: $vp-767) {
@@ -40,7 +40,7 @@
     }
 
     @media (max-width: $vp-1023) {
-      left: 50px;
+      left: 45px;
 
       @include retina {
         background-image: url("../img/backgrounds/bg-image-2022-desktop-and-tablet@2x.png");
@@ -80,7 +80,7 @@
   cursor: default;
 
   @media (max-width: $vp-1023) {
-    padding: 0 0 10px 0;
+    padding: 0 0 12px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -100,6 +100,12 @@
   color: $color-default-black;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding-bottom: 21px;
+
+    line-height: 21.5px;
+  }
 
   @media (max-width: $vp-767) {
     font-size: 14px;

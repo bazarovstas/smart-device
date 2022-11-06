@@ -3,6 +3,10 @@
 .logo-footer {
   padding-bottom: 30px;
 
+  @media (max-width: $vp-1023) {
+    padding-bottom: 31px;
+  }
+
   @media (max-width: $vp-767) {
     display: flex;
     justify-content: center;

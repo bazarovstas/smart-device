@@ -12,7 +12,7 @@
   background-color: $color-default-black;
 
   @media (max-width: $vp-1023) {
-    padding: 60px 50px 75px 50px;
+    padding: 55px 50px 75px 50px;
   }
 
   @media (max-width: $vp-767) {
@@ -52,6 +52,10 @@
   color: $color-white;
 
   cursor: default;
+
+  @media (max-width: $vp-1023) {
+    padding-bottom: 38px;
+  }
 
   @media (max-width: $vp-767) {
     padding-bottom: 40px;
@@ -231,7 +235,7 @@
   overflow: hidden;
 
   @media (max-width: $vp-1023) {
-    padding: 5.21vw 7.82vw 5.21vw 5.86vw;
+    padding: 4.8vw 7.82vw 5.21vw 5.86vw;
   }
 
   @media (max-width: $vp-767) {
