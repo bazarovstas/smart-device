@@ -13,6 +13,7 @@
   column-gap: 11px;
 
   background-color: transparent;
+  cursor: pointer;
   user-select: none;
 }
 
@@ -25,6 +26,7 @@
 
   outline: 1px solid $color-white;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .checkbox input:checked + label::before {

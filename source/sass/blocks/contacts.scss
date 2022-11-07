@@ -115,6 +115,10 @@
   line-height: 25px;
   color: $transparent-white-0-7;
 
+  &:hover {
+    color: $color-yellow;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 19px;

@@ -22,6 +22,11 @@
 
   background-color: $transparent-black-0-15;
   border-radius: 4px;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: $transparent-black-0-5;
+  }
 }
 
 .modal-form__name {
@@ -40,6 +45,11 @@
 
   max-height: 185px;
   margin-bottom: 15px;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: $transparent-black-0-5;
+  }
 }
 
 .modal-form__button {
@@ -96,6 +106,12 @@
   background-color: $color-default-black;
   border: none;
   cursor: pointer;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: lighten($color-default-black, 15%);
+    color: lighten($color-yellow, 20%);
+  }
 }
 
 .modal-form__accept-checkbox input {

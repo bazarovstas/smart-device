@@ -40,10 +40,18 @@
   }
 }
 
+.social svg {
+  fill: $color-alice-blue;
+}
+
 .social a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+
+  &:hover svg {
+    fill: darken($color-alice-blue, 35%);
+  }
 }

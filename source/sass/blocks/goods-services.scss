@@ -92,6 +92,8 @@
   max-width: 350px;
   max-height: 650px;
 
+  user-select: none;
+
   &:nth-child(n) {
     background: $color-default-black url("../img/backgrounds/bg-image-offers-1-desktop.jpg") no-repeat top center;
     background-size: cover;

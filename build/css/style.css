@@ -691,6 +691,25 @@ button,
   column-gap: 15px;
 }
 
+.main-header__email-link:hover .main-header__email-text,
+.main-header__email-link:hover .main-header__phone-text,
+.main-header__phone-link:hover .main-header__email-text,
+.main-header__phone-link:hover .main-header__phone-text {
+  color: #ffff00;
+}
+
+.main-header__email-link:hover .main-header__email-icon,
+.main-header__email-link:hover .main-header__phone-icon,
+.main-header__phone-link:hover .main-header__email-icon,
+.main-header__phone-link:hover .main-header__phone-icon {
+  fill: #ffff00;
+}
+
+.main-header__email-icon,
+.main-header__phone-icon {
+  fill: #00b2ff;
+}
+
 .main-header__email-text,
 .main-header__phone-text {
   margin: 0;
@@ -699,6 +718,10 @@ button,
   font-size: 16px;
   line-height: 18px;
   color: #f2f5f6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .logo-header__image {
@@ -782,7 +805,6 @@ button,
   font-size: 24px;
   line-height: 34px;
   color: #00b2ff;
-  cursor: default;
 }
 
 .advantages p {
@@ -793,7 +815,6 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #041827;
-  cursor: default;
 }
 
 .advantages ul {
@@ -814,6 +835,7 @@ button,
   position: relative;
   padding: 40px 45px 35px 45px;
   outline: 1px solid #ebebeb;
+  cursor: pointer;
 }
 
 .advantages li:hover {
@@ -957,6 +979,10 @@ button,
   height: 34vw;
   max-width: 350px;
   max-height: 650px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .goods-services__list-wrapper li:nth-child(n) {
@@ -1087,6 +1113,7 @@ button,
   font-size: 36px;
   line-height: 50px;
   color: #ffffff;
+  cursor: default;
 }
 
 .feedback p {
@@ -1098,6 +1125,7 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.8);
+  cursor: default;
 }
 
 .feedback__form-wrapper {
@@ -1123,6 +1151,14 @@ button,
   width: 100%;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-form__name:hover,
+.feedback-form__phone:hover {
+  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .feedback-form__name {
@@ -1152,6 +1188,13 @@ button,
   grid-column: 1/3;
   max-height: 155px;
   margin-bottom: 15px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-form__question:hover {
+  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .feedback-form__button {
@@ -1244,6 +1287,18 @@ button,
   background-color: #041827;
   border: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.feedback-form__button button:hover {
+  background-color: #0b436c;
+  color: #ffff66;
 }
 
 .feedback-form__accept-checkbox input {
@@ -1316,6 +1371,10 @@ button,
   margin-right: 0;
 }
 
+.social svg {
+  fill: #f8fdff;
+}
+
 .social a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1328,6 +1387,10 @@ button,
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.social a:hover svg {
+  fill: #46caff;
 }
 
 .footer-nav {
@@ -1385,6 +1448,10 @@ button,
   color: rgba(255, 255, 255, 0.65);
 }
 
+.footer-nav a:hover {
+  color: #ffff00;
+}
+
 .footer-nav__additional-list-wrapper ul {
   margin-top: 42px;
 }
@@ -1432,6 +1499,10 @@ button,
   font-size: 16px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.65);
+}
+
+.contacts a:hover {
+  color: #ffff00;
 }
 
 .contacts p {
@@ -1482,6 +1553,10 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #f2f5f6;
   border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn--promo {
@@ -1495,6 +1570,10 @@ button,
   text-transform: uppercase;
   background-color: #00b2ff;
   border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn--about-us {
@@ -1519,6 +1598,10 @@ button,
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #00b2ff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .checkbox input {
@@ -1539,6 +1622,7 @@ button,
   -moz-column-gap: 11px;
   column-gap: 11px;
   background-color: transparent;
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1553,6 +1637,7 @@ button,
   margin-right: 11px;
   outline: 1px solid #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .checkbox input:checked + label::before {
@@ -1676,6 +1761,7 @@ button,
   font-size: 36px;
   line-height: 50px;
   color: #ffffff;
+  cursor: default;
 }
 
 .modal__text-content {
@@ -1687,6 +1773,7 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.8);
+  cursor: default;
 }
 
 .modal__close-btn {
@@ -1700,6 +1787,13 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.modal__close-btn:hover {
+  background-color: rgba(4, 20, 39, 0.15);
 }
 
 .is-active {
@@ -1726,6 +1820,14 @@ button,
   width: 100%;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.modal-form__name:hover,
+.modal-form__phone:hover {
+  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .modal-form__name {
@@ -1755,6 +1857,13 @@ button,
   grid-column: 1/2;
   max-height: 185px;
   margin-bottom: 15px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.modal-form__question:hover {
+  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .modal-form__button {
@@ -1844,6 +1953,14 @@ button,
   background-color: #041827;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.modal-form__button button:hover {
+  background-color: #0b436c;
+  color: #ffff66;
 }
 
 .modal-form__accept-checkbox input {

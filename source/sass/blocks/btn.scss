@@ -39,6 +39,7 @@
     background-color: $color-transparent;
     border: 1px solid $color-default-white;
     border-radius: 3px;
+    user-select: none;
 
     @media (max-width: $vp-1023) {
       display: none;
@@ -58,6 +59,7 @@
     text-transform: uppercase;
     background-color: $color-deep-sky-blue;
     border-radius: 3px;
+    user-select: none;
 
     @media (max-width: $vp-1023) {
       margin-left: 7%;
@@ -93,6 +95,7 @@
 
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
+    user-select: none;
 
     @media (max-width: $vp-1023) {
       margin: 0;

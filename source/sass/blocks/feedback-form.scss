@@ -25,6 +25,11 @@
 
   background-color: $transparent-black-0-15;
   border-radius: 4px;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: $transparent-black-0-5;
+  }
 
   @media (max-width: $vp-1023) {
     max-width: 100%;
@@ -52,6 +57,11 @@
 
   max-height: 155px;
   margin-bottom: 15px;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: $transparent-black-0-5;
+  }
 
   @media (max-width: $vp-767) {
     grid-row: 3 / 4;
@@ -143,6 +153,13 @@
   background-color: $color-default-black;
   border: none;
   cursor: pointer;
+  user-select: none;
+  transition: $trans-default;
+
+  &:hover {
+    background-color: lighten($color-default-black, 15%);
+    color: lighten($color-yellow, 20%);
+  }
 
   @media (max-width: $vp-767) {
     width: 100%;

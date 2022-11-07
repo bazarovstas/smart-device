@@ -37,8 +37,6 @@
   line-height: 34px;
   color: $color-deep-sky-blue;
 
-  cursor: default;
-
   @media (max-width: $vp-1023) {
     padding-bottom: 9px;
 
@@ -62,8 +60,6 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-black;
-
-  cursor: default;
 
   @media (max-width: $vp-1023) {
     line-height: 21.6px;
@@ -103,6 +99,7 @@
   padding: 40px 45px 35px 45px;
 
   outline: 1px solid $color-shades-of-whisper;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-deep-sky-blue;

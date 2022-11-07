@@ -193,25 +193,22 @@
 
                   <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
                     <div class="feedback-form__name">
-                      <input id="form-name-field" type="text" placeholder="Имя" tabindex="9">
+                      <input id="form-name-field" name="feedback-form-name" type="text" placeholder="Имя" tabindex="9" required>
                       <label class="visually-hidden" for="form-name-field">Впишите имя</label>
                     </div>
                     <div class="feedback-form__phone">
-                      <input id="form-phone-field" type="tel" placeholder="Телефон" tabindex="10">
+                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" tabindex="10" required>
                       <label class="visually-hidden" for="form-phone-field">Впишите ваш номер телефона</label>
                     </div>
                     <div class="feedback-form__question">
                       <label class="visually-hidden" for="form-question-field">Напишите ваш вопрос</label>
-                      <textarea name="feedback-form-textarea" id="form-question-field" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="11"></textarea>
+                      <textarea id="form-question-field" name="feedback-form-textarea" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="11"></textarea>
                     </div>
                     <div class="feedback-form__button">
                       <button type="submit" tabindex="13">Задать вопрос</button>
                     </div>
                     <div class="feedback-form__accept-checkbox  checkbox">
-                      <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" tabindex="12">
-                      <!-- <svg class="feedback-form__checkbox" width="15" height="15" aria-hidden="true">
-                        <use xlink:href="img/sprite_auto.svg#checkbox-unchecked"></use>
-                      </svg> -->
+                      <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" tabindex="12" required>
                       <label for="form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
                     </div>
                   </form>
@@ -374,22 +371,22 @@
 
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="modal-form__name">
-                <input id="modal-form-name-field" type="text" placeholder="Имя" data-modal-form="name">
+                <input id="modal-form-name-field" name="modal-form-name" type="text" placeholder="Имя" data-modal-form="name" required>
                 <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
               </div>
               <div class="modal-form__phone">
-                <input id="modal-form-phone-field" type="tel" placeholder="Телефон">
+                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" required>
                 <label class="visually-hidden" for="modal-form-phone-field">Впишите ваш номер телефона</label>
               </div>
               <div class="modal-form__question">
                 <label class="visually-hidden" for="modal-form-question-field">Напишите ваш вопрос</label>
-                <textarea name="modal-form-textarea" id="modal-form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <textarea name="modal-form-textarea" name="modal-form-name" id="modal-form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="modal-form__button">
                 <button type="submit">Отправить</button>
               </div>
-              <div class="modal-form__accept-checkbox">
-                <input id="modal-form-accept-checkbox-field" type="checkbox">
+              <div class="modal-form__accept-checkbox  checkbox">
+                <input id="modal-form-accept-checkbox-field" type="checkbox" name="modal-form-accept-checkbox" value="modal-form-accepted" required>
                 <label for="modal-form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
               </div>
             </form>
