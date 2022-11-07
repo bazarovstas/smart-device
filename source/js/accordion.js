@@ -1,10 +1,20 @@
-function toggleAccordion {
+function toggleAccordion() {
 
-  const accordionNav = document.querySelector('[data-accordion="1"]');
-  const accordionCon = document.querySelector('[data-accordion="2"]');
+  const accordionNavigation = document.querySelector('[data-accordion="1"]');
+  const accordionContacts = document.querySelector('[data-accordion="2"]');
+  const buttons = document.querySelectorAll('[data-accordion-button]');
 
+  accordionNavigation.classList.add('footer-nav--closed');
+  accordionContacts.classList.add('contacts--closed');
 
+  function hideAccordions() {
+    accordionNavigation.classList.toggle('footer-nav--closed');
+    accordionContacts.classList.toggle('contacts--closed');
+  }
 
+  function showNavigationAccordion() {
+    accordionNavigation.classList.toggle('footer-nav--closed');
+  }
 
 
 
@@ -17,4 +27,4 @@ function toggleAccordion {
   // }
 }
 
-export {toggleAccordion}
+export {toggleAccordion};

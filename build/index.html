@@ -33,7 +33,7 @@
             </div>
 
             <div class="main-header__email-wrapper">
-              <a class="main-header__email-link" href="mailto:info@sd.ru">
+              <a class="main-header__email-link" href="mailto:info@sd.ru" tabindex="1">
                 <svg class="main-header__email-icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-email"></use>
                 </svg>
@@ -42,7 +42,7 @@
             </div>
 
             <div class="main-header__phone-wrapper">
-              <a class="main-header__phone-link" href="tel:+74950005252">
+              <a class="main-header__phone-link" href="tel:+74950005252" tabindex="2">
                 <svg class="main-header__phone-icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                 </svg>
@@ -50,7 +50,7 @@
               </a>
             </div>
 
-            <button class="btn  btn--main-header" data-open-modal-button  type="button" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
+            <button class="btn  btn--main-header" data-open-modal-button  type="button" tabindex="3" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
 
           </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="promo__container">
               <h2 class="promo__heading">Печатные платы</h2>
               <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <button class="promo__link  btn  btn--promo" type="button" href="#" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
+              <button class="promo__link  btn  btn--promo" type="button" tabindex="4" href="#" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
                 <span class="promo__link-text  promo__link-text--short">Бесплатная консультация</span>
                 <span class="promo__link-text  promo__link-text--long">Получить бесплатную консультацию</span>
               </button>
@@ -117,7 +117,7 @@
         <section class="about-us">
           <div class="about-us__wrapper">
             <h2 class="about-us__heading">О компании</h2>
-            <button class="btn  btn--about-us" type="button" data-spoiler-button  aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
+            <button class="btn  btn--about-us" type="button" tabindex="5" data-spoiler-button  aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
             <p class="about-us__content  about-us__content--first">
               Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
             </p>
@@ -147,7 +147,7 @@
             <div class="goods-services__list-wrapper">
               <ul class="goods-services__list">
                 <li class="goods-services__item  goods-services__item--production">
-                  <a class="goods-services__link" href="#">
+                  <a class="goods-services__link" href="#" tabindex="6">
                     <p class="goods-services__text">Производство<br>печатных плат</p>
                     <span class="goods-services__icon-wrapper">
                       <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
@@ -157,7 +157,7 @@
                   </a>
                 </li>
                 <li class="goods-services__item  goods-services__item--installation">
-                  <a class="goods-services__link" href="#">
+                  <a class="goods-services__link" href="#" tabindex="7">
                     <p class="goods-services__text">Монтаж печатных<br>плат</p>
                     <span class="goods-services__icon-wrapper">
                       <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
@@ -167,7 +167,7 @@
                   </a>
                 </li>
                 <li class="goods-services__item  goods-services__item--components">
-                  <a class="goods-services__link" href="#">
+                  <a class="goods-services__link" href="#" tabindex="8">
                     <p class="goods-services__text">Комплектующие<br>для светотехники</p>
                     <span class="goods-services__icon-wrapper">
                       <svg class="goods-services__icon" width="5" height="10" aria-hidden="true" focusable="false">
@@ -193,22 +193,25 @@
 
                   <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
                     <div class="feedback-form__name">
-                      <input id="form-name-field" type="text" placeholder="Имя">
+                      <input id="form-name-field" type="text" placeholder="Имя" tabindex="9">
                       <label class="visually-hidden" for="form-name-field">Впишите имя</label>
                     </div>
                     <div class="feedback-form__phone">
-                      <input id="form-phone-field" type="tel" placeholder="Телефон">
+                      <input id="form-phone-field" type="tel" placeholder="Телефон" tabindex="10">
                       <label class="visually-hidden" for="form-phone-field">Впишите ваш номер телефона</label>
                     </div>
                     <div class="feedback-form__question">
                       <label class="visually-hidden" for="form-question-field">Напишите ваш вопрос</label>
-                      <textarea name="feedback-form-textarea" id="form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                      <textarea name="feedback-form-textarea" id="form-question-field" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="11"></textarea>
                     </div>
                     <div class="feedback-form__button">
-                      <button type="submit">Задать вопрос</button>
+                      <button type="submit" tabindex="13">Задать вопрос</button>
                     </div>
-                    <div class="feedback-form__accept-checkbox">
-                      <input id="form-accept-checkbox-field" type="checkbox">
+                    <div class="feedback-form__accept-checkbox  checkbox">
+                      <input id="form-accept-checkbox-field" type="checkbox" name="feedback-form-accept-checkbox" value="feedback-form-accepted" tabindex="12">
+                      <!-- <svg class="feedback-form__checkbox" width="15" height="15" aria-hidden="true">
+                        <use xlink:href="img/sprite_auto.svg#checkbox-unchecked"></use>
+                      </svg> -->
                       <label for="form-accept-checkbox-field">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
                     </div>
                   </form>
@@ -237,7 +240,7 @@
 
                 <ul class="social__list">
                   <li class="social__item">
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" tabindex="14">
                       <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
                         <use xlink:href="img/sprite_auto.svg#icon-social-ok"></use>
                       </svg>
@@ -246,7 +249,7 @@
                   </li>
 
                   <li class="social__item">
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" tabindex="15">
                       <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
                         <use xlink:href="img/sprite_auto.svg#icon-social-vk"></use>
                       </svg>
@@ -255,7 +258,7 @@
                   </li>
 
                   <li class="social__item">
-                    <a class="social__link" href="#">
+                    <a class="social__link" href="#" tabindex="16">
                       <svg class="social__icon  social__icon-ok" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true" focusable="false">
                         <use xlink:href="img/sprite_auto.svg#icon-social-pinterest"></use>
                       </svg>
@@ -270,23 +273,23 @@
             <div class="main-footer__nav  footer-nav" data-accordion="1">
               <div class="footer-nav__wrapper">
                 <div class="footer-nav__button-wrapper">
-                  <button class="footer-nav__accordion-button" type="button">
+                  <button class="footer-nav__accordion-button" type="button" data-accordion-button>
                     <span class="visually-hidden">Переключить блок меню</span>
                   </button>
                 </div>
                 <h2 class="footer-nav__heading">Разделы сайта</h2>
                 <ul class="footer-nav__list">
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">О&nbsp;Компании</a>
+                    <a class="footer-nav__link" href="#" tabindex="17">О&nbsp;Компании</a>
                   </li>
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Продукты</a>
+                    <a class="footer-nav__link" href="#" tabindex="18">Продукты</a>
                   </li>
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Производство печатных плат</a>
+                    <a class="footer-nav__link" href="#" tabindex="19">Производство печатных плат</a>
                   </li>
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
+                    <a class="footer-nav__link" href="#" tabindex="20">Монтаж печатных плат</a>
                   </li>
                 </ul>
               </div>
@@ -294,13 +297,13 @@
               <div class="footer-nav__additional-list-wrapper">
                 <ul class="footer-nav__additional-list">
                   <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Комплектующие</a>
+                    <a class="footer-nav__link" href="#" tabindex="21">Комплектующие</a>
                   </li>
                   <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Доставка</a>
+                    <a class="footer-nav__link" href="#" tabindex="22">Доставка</a>
                   </li>
                   <li class="footer-nav__additional-item">
-                    <a class="footer-nav__link" href="#">Контакты</a>
+                    <a class="footer-nav__link" href="#" tabindex="23">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -308,27 +311,27 @@
 
             <div class="main-footer__contacts  contacts" data-accordion="2">
               <div class="contacts__button-wrapper">
-                <button class="contacts__accordion-button" type="button">
+                <button class="contacts__accordion-button" type="button" data-accordion-button>
                   <span class="visually-hidden">Переключить блок меню</span>
                 </button>
               </div>
               <h2 class="contacts__heading">Наш офис</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <a class="contacts__link" href="#">
+                  <a class="contacts__link" href="#" tabindex="24">
                     <address class="contacts__address">
                       <p class="contacts__address-text">г.&nbsp;Мытищи, Олимпийский проспект, д.10</p>
                     </address>
                   </a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+74955894050" aria-label="Связаться с нами по основному номеру телефона.">+7 (495) 589-40-50</a>
+                  <a class="contacts__link" href="tel:+74955894050" tabindex="25" aria-label="Связаться с нами по основному номеру телефона.">+7 (495) 589-40-50</a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+79253895829" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 389-58-29</a>
+                  <a class="contacts__link" href="tel:+79253895829" tabindex="26" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 389-58-29</a>
                 </li>
                 <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+79253647813" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 364-78-13</a>
+                  <a class="contacts__link" href="tel:+79253647813" tabindex="27" aria-label="Связаться с нами по дополнительному номеру телефона.">+7 (925) 364-78-13</a>
                 </li>
               </ul>
             </div>

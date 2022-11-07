@@ -1263,7 +1263,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .main-footer {
@@ -1519,6 +1519,61 @@ button,
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #00b2ff;
+}
+
+.checkbox input {
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+}
+
+.checkbox label {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 15px 1fr;
+  grid-template-columns: 15px 1fr;
+  -webkit-column-gap: 11px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
+  background-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 11px;
+  outline: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.checkbox input:checked + label::before {
+  background-image: url("../img/svg/checkbox-checked.svg");
+}
+
+.checkbox input:not(:disabled) + label:hover::before {
+  outline: 2px solid #f6b26b;
+}
+
+.checkbox input:focus + label::before,
+.checkbox input:active + label::before {
+  outline: 2px solid #ffff00;
+}
+
+.checkbox input:focus-visible + label::before {
+  outline: 2px solid #ffff00;
+}
+
+.checkbox input:disabled + label::before {
+  background-color: #007db3;
 }
 
 .modal {
