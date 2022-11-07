@@ -1240,31 +1240,31 @@ button,
 .feedback-form__name input::-webkit-input-placeholder,
 .feedback-form__phone input::-webkit-input-placeholder,
 .feedback-form__question textarea::-webkit-input-placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feedback-form__name input::-moz-placeholder,
 .feedback-form__phone input::-moz-placeholder,
 .feedback-form__question textarea::-moz-placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feedback-form__name input:-ms-input-placeholder,
 .feedback-form__phone input:-ms-input-placeholder,
 .feedback-form__question textarea:-ms-input-placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feedback-form__name input::-ms-input-placeholder,
 .feedback-form__phone input::-ms-input-placeholder,
 .feedback-form__question textarea::-ms-input-placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feedback-form__name input::placeholder,
 .feedback-form__phone input::placeholder,
 .feedback-form__question textarea::placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feedback-form__question textarea {
