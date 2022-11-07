@@ -63,7 +63,7 @@
             <div class="promo__container">
               <h2 class="promo__heading">Печатные платы</h2>
               <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <button class="promo__link  btn  btn--promo" type="button" tabindex="4" href="#" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
+              <button class="promo__link  btn  btn--promo" type="button" tabindex="4" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
                 <span class="promo__link-text  promo__link-text--short">Бесплатная консультация</span>
                 <span class="promo__link-text  promo__link-text--long">Получить бесплатную консультацию</span>
               </button>
@@ -197,7 +197,7 @@
                       <label class="visually-hidden" for="form-name-field">Впишите имя</label>
                     </div>
                     <div class="feedback-form__phone">
-                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" tabindex="10" required>
+                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" tabindex="10" data-validate-phone required>
                       <label class="visually-hidden" for="form-phone-field">Впишите ваш номер телефона</label>
                     </div>
                     <div class="feedback-form__question">
@@ -375,12 +375,12 @@
                 <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
               </div>
               <div class="modal-form__phone">
-                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" required>
+                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" data-validate-phone required>
                 <label class="visually-hidden" for="modal-form-phone-field">Впишите ваш номер телефона</label>
               </div>
               <div class="modal-form__question">
                 <label class="visually-hidden" for="modal-form-question-field">Напишите ваш вопрос</label>
-                <textarea name="modal-form-textarea" name="modal-form-name" id="modal-form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <textarea name="modal-form-textarea" id="modal-form-question-field" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="modal-form__button">
                 <button type="submit">Отправить</button>

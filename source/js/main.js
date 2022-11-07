@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {toggleModal} from './modal';
 import {scrollToForm} from './scroll-to-form';
 import {showSpoiler} from './spoiler';
+import {initMask} from './mask';
 import {toggleAccordion} from './accordion';
 
 // ---------------------------------
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   toggleModal();
   scrollToForm();
   showSpoiler();
+  initMask();
   toggleAccordion();
 
   // Utils
