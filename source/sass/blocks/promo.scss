@@ -65,7 +65,8 @@
   }
 }
 
-.promo h2 {
+.promo h2,
+.promo .promo__heading {
   margin: 0;
   padding-bottom: 30px;
 
@@ -93,7 +94,8 @@
   }
 }
 
-.promo p {
+.promo p,
+.promo .promo__text {
   max-width: 685px;
   margin: 0;
   padding-bottom: 49px;

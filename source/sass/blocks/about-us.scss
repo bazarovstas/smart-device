@@ -72,7 +72,8 @@
   }
 }
 
-.about-us h2 {
+.about-us h2,
+.about-us .about-us__heading {
   margin: 0;
   padding: 5px 0 15px 0;
 
@@ -93,7 +94,8 @@
   }
 }
 
-.about-us p {
+.about-us p,
+.about-us .about-us__content {
   margin: 0;
   padding-bottom: 22px;
 

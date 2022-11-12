@@ -10,7 +10,8 @@
   }
 }
 
-.social ul {
+.social ul,
+.social .social__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -24,7 +25,8 @@
   }
 }
 
-.social li {
+.social li,
+.social .social__item {
   width: 40px;
   height: 40px;
   margin-left: 12px;
@@ -40,11 +42,8 @@
   }
 }
 
-.social svg {
-  fill: $color-alice-blue;
-}
-
-.social a {
+.social a,
+.social .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,4 +53,9 @@
   &:hover svg {
     fill: darken($color-alice-blue, 35%);
   }
+}
+
+.social svg,
+.social .social__icon {
+  fill: $color-alice-blue;
 }
