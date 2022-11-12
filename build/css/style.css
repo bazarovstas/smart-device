@@ -581,14 +581,6 @@ button,
   flex-shrink: 0;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -619,13 +611,6 @@ button,
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
 }
 
 .container {
@@ -2895,6 +2880,13 @@ button,
   .contacts--closed .contacts__heading {
     margin-top: 0;
     padding: 20px 0 20px 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
   }
 }
 

@@ -1,7 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {toggleModal} from './modules/modal';
-import {scrollToForm} from './modules/scroll-to-form';
 import {showSpoiler} from './modules/spoiler';
 import {initMask} from './modules/mask';
 import {toggleAccordion} from './modules/accordion';
@@ -10,7 +9,6 @@ import {toggleAccordion} from './modules/accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
   toggleModal();
-  scrollToForm();
   showSpoiler();
   initMask();
   toggleAccordion();
