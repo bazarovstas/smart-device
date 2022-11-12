@@ -1,10 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {toggleModal} from './modal';
-import {scrollToForm} from './scroll-to-form';
-import {showSpoiler} from './spoiler';
-import {initMask} from './mask';
-import {toggleAccordion} from './accordion';
+import {toggleModal} from './modules/modal';
+import {scrollToForm} from './modules/scroll-to-form';
+import {showSpoiler} from './modules/spoiler';
+import {initMask} from './modules/mask';
+import {toggleAccordion} from './modules/accordion';
 
 // ---------------------------------
 
