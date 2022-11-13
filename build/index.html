@@ -50,7 +50,7 @@
               </a>
             </div>
 
-            <button class="btn  btn--main-header" data-open-modal-button  type="button" tabindex="3" aria-label="Открыть форму заказа обратного звонка.">Заказать звонок</button>
+            <button class="btn  btn--main-header" type="button" tabindex="3" aria-label="Открыть форму заказа обратного звонка." data-open-modal="contact">Заказать звонок</button>
 
           </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="promo__container">
               <h2 class="promo__heading">Печатные платы</h2>
               <p class="promo__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="promo__link  btn  btn--promo" href="#feedback" tabindex="4" data-scroll-button  aria-label="Перейти в раздел заполнения формы вопроса.">
+              <a class="promo__link  btn  btn--promo" href="#feedback" tabindex="4" aria-label="Перейти в раздел заполнения формы вопроса.">
                 <span class="promo__link-text  promo__link-text--short">Бесплатная консультация</span>
                 <span class="promo__link-text  promo__link-text--long">Получить бесплатную консультацию</span>
               </a>
@@ -117,7 +117,7 @@
         <section class="about-us">
           <div class="about-us__wrapper">
             <h2 class="about-us__heading">О компании</h2>
-            <button class="btn  btn--about-us" type="button" tabindex="5" data-spoiler-button  aria-label="Узнать более подробную информацию про нашу компанию.">Подробнее</button>
+            <button class="btn  btn--about-us" type="button" tabindex="5" aria-label="Узнать более подробную информацию про нашу компанию." data-spoiler-button>Подробнее</button>
             <p class="about-us__content  about-us__content--first">
               Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
             </p>
@@ -181,7 +181,7 @@
           </div>
         </section>
 
-        <section class="feedback" data-scroll-to-form id="feedback">
+        <section class="feedback" id="feedback">
           <div class="feedback__wrapper">
             <div class="feedback__flex-wrapper">
               <div class="feedback__flex-container">
@@ -338,11 +338,11 @@
       </footer>
     </div>
 
-    <div class="modal modal--preload  modal--fit-content  modal--no-scale" data-modal="success">
+    <div class="modal modal--preload  modal--fit-content  modal--no-scale" data-modal="contact">
       <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__overlay"></div>
         <div class="modal__content">
-          <button class="modal__close-btn  btn-reset" type="button" data-close-modal-button  aria-label="Закрыть попап">
+          <button class="modal__close-btn  btn-reset" type="button" aria-label="Закрыть окно формы." data-close-modal>
             <svg width="15" height="15" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
@@ -356,7 +356,7 @@
 
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="modal-form__name">
-                <input id="modal-form-name-field" name="modal-form-name" type="text" placeholder="Имя" data-modal-form="name" required>
+                <input id="modal-form-name-field" name="modal-form-name" type="text" placeholder="Имя" autofocus required>
                 <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
               </div>
               <div class="modal-form__phone">

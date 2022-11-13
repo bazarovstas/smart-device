@@ -136,8 +136,7 @@ export class Modals {
   open(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
     // focus
-    const inputModal = modal.querySelector('[data-modal-form="name"]');
-    // focus
+    const inputModal = modal.querySelector('[autofocus]');
 
     if (!modal || modal.classList.contains('is-active')) {
       return;
@@ -176,7 +175,6 @@ export class Modals {
       if (inputModal) {
         inputModal.focus();
       }
-      // focus
 
     }, this._eventTimeout);
   }
