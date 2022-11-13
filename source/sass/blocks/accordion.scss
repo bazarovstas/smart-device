@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+.accordion {
+  @media (max-width: $vp-767) {
+    &--closed {
+      padding-bottom: 0;
+
+      .accordion__button {
+        background-image: url("../img/sprite/icon-plus.svg");
+      }
+
+      ul {
+        display: none;
+      }
+
+      h2 {
+        margin-top: 0;
+        padding: 20px 0 20px 0;
+      }
+    }
+  }
+}

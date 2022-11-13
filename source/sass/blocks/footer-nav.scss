@@ -13,22 +13,6 @@
   @media (max-width: $vp-767) {
     padding-bottom: 20px;
 
-    &--closed {
-      padding-bottom: 0;
-
-      .footer-nav__accordion-button {
-        background-image: url("../img/sprite/icon-plus.svg");
-      }
-
-      .footer-nav__list {
-        display: none;
-      }
-
-      .footer-nav__additional-list {
-        display: none;
-      }
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -45,7 +29,7 @@
 }
 
 .footer-nav button,
-.footer-nav .footer-nav__accordion-button {
+.footer-nav__accordion-button {
   display: none;
 
   border: none;
@@ -66,7 +50,7 @@
 }
 
 .footer-nav h2,
-.footer-nav .footer-nav__heading {
+.footer-nav__heading {
   margin: 0;
   padding: 5px 0 22px 0;
 
@@ -98,8 +82,8 @@
 }
 
 .footer-nav ul,
-.footer-nav .footer-nav__list,
-.footer-nav .footer-nav__additional-list {
+.footer-nav__list,
+.footer-nav__additional-list {
   max-width: 220px;
   margin: 0;
   padding: 0;
@@ -120,7 +104,7 @@
 }
 
 .footer-nav a,
-.footer-nav .footer-nav__link {
+.footer-nav__link {
   font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
@@ -138,7 +122,7 @@
 }
 
 .footer-nav__additional-list-wrapper ul,
-.footer-nav__additional-list-wrapper .footer-nav__additional-list {
+.footer-nav__additional-list {
   margin-top: 42px;
 
   @media (max-width: $vp-1023) {

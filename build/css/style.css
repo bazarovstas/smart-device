@@ -726,7 +726,10 @@ button,
 .promo {
   min-height: 640px;
   margin-top: -2px;
-  background: #041827 url("../img/backgrounds/bg-image-promo-desktop.jpg") no-repeat bottom;
+  background-color: #041827;
+  background-image: url("../img/backgrounds/bg-image-promo-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -741,7 +744,7 @@ button,
 }
 
 .promo h2,
-.promo .promo__heading {
+.promo__heading {
   margin: 0;
   padding-bottom: 30px;
   font-weight: 700;
@@ -754,7 +757,7 @@ button,
 }
 
 .promo p,
-.promo .promo__text {
+.promo__text {
   max-width: 685px;
   margin: 0;
   padding-bottom: 49px;
@@ -786,7 +789,7 @@ button,
 }
 
 .advantages ul,
-.advantages .advantages__list {
+.advantages__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -801,7 +804,7 @@ button,
 }
 
 .advantages li,
-.advantages .advantages__item {
+.advantages__item {
   position: relative;
   padding: 40px 45px 35px 45px;
   outline: 1px solid #ebebeb;
@@ -809,24 +812,24 @@ button,
 }
 
 .advantages li:hover,
-.advantages .advantages__item:hover {
+.advantages__item:hover {
   background-color: #00b2ff;
 }
 
 .advantages li:hover h3,
 .advantages li:hover p,
-.advantages .advantages__item:hover h3,
-.advantages .advantages__item:hover p {
+.advantages__item:hover h3,
+.advantages__item:hover p {
   color: #f2f5f6;
 }
 
 .advantages li:hover svg,
-.advantages .advantages__item:hover svg {
+.advantages__item:hover svg {
   fill: #f2f5f6;
 }
 
 .advantages li::after,
-.advantages .advantages__item::after {
+.advantages__item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -837,7 +840,7 @@ button,
 }
 
 .advantages h3,
-.advantages .advantages__item-title {
+.advantages__item-title {
   margin: 0;
   padding-bottom: 13px;
   font-weight: 400;
@@ -847,7 +850,7 @@ button,
 }
 
 .advantages p,
-.advantages .advantages__item-description {
+.advantages__item-description {
   min-height: 120px;
   margin: 0;
   font-family: "PT Mono", "Courier New", monospace;
@@ -858,7 +861,7 @@ button,
 }
 
 .advantages svg,
-.advantages .advantages__icon {
+.advantages__icon {
   margin-bottom: 15px;
   fill: #00b2ff;
 }
@@ -909,7 +912,7 @@ button,
 }
 
 .about-us p,
-.about-us .about-us__content {
+.about-us__content {
   margin: 0;
   padding-bottom: 22px;
   font-family: "PT Mono", "Courier New", monospace;
@@ -944,7 +947,7 @@ button,
 }
 
 .goods-services h2,
-.goods-services .goods-services__heading {
+.goods-services__heading {
   margin: 0;
   padding-bottom: 52px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -956,7 +959,7 @@ button,
 }
 
 .goods-services__list-wrapper ul,
-.goods-services__list-wrapper .goods-services__list {
+.goods-services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,7 +978,7 @@ button,
 }
 
 .goods-services__list-wrapper li,
-.goods-services__list-wrapper .goods-services__item {
+.goods-services__item {
   position: relative;
   width: 18.2vw;
   height: 34vw;
@@ -987,22 +990,23 @@ button,
   user-select: none;
   background-color: #041827;
   background-image: url("../img/backgrounds/bg-image-offers-1-desktop.jpg");
-  background-position: no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
 }
 
 .goods-services__list-wrapper li:nth-child(2n),
-.goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+.goods-services__item:nth-child(2n) {
   background-image: url("../img/backgrounds/bg-image-offers-2-desktop.jpg");
 }
 
 .goods-services__list-wrapper li:nth-child(3n),
-.goods-services__list-wrapper .goods-services__item:nth-child(3n) {
+.goods-services__item:nth-child(3n) {
   background-image: url("../img/backgrounds/bg-image-offers-3-desktop.jpg");
 }
 
 .goods-services__list-wrapper li:hover::after,
-.goods-services__list-wrapper .goods-services__item:hover::after {
+.goods-services__item:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1013,12 +1017,12 @@ button,
 }
 
 .goods-services__list-wrapper a,
-.goods-services__list-wrapper .goods-services__link {
+.goods-services__link {
   position: relative;
 }
 
 .goods-services__list-wrapper p,
-.goods-services__link .goods-services__text {
+.goods-services__text {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -1032,7 +1036,7 @@ button,
 }
 
 .goods-services__list-wrapper span,
-.goods-services__list-wrapper .goods-services__icon-wrapper {
+.goods-services__icon-wrapper {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1053,7 +1057,7 @@ button,
 }
 
 .goods-services__list-wrapper svg,
-.goods-services__list-wrapper .goods-services__icon {
+.goods-services__icon {
   width: 0.35vw;
   height: 0.7vw;
   fill: #ffffff;
@@ -1111,7 +1115,7 @@ button,
 }
 
 .feedback h2,
-.feedback .feedback__heading {
+.feedback__heading {
   max-width: 585px;
   margin: 0;
   padding-bottom: 13px;
@@ -1124,7 +1128,7 @@ button,
 }
 
 .feedback p,
-.feedback .feedback__text-content {
+.feedback__text-content {
   max-width: 585px;
   margin: 0 0 0 5px;
   padding-bottom: 35px;
@@ -1361,7 +1365,7 @@ button,
 }
 
 .social ul,
-.social .social__list {
+.social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1371,19 +1375,19 @@ button,
 }
 
 .social li,
-.social .social__item {
+.social__item {
   width: 40px;
   height: 40px;
   margin-left: 12px;
 }
 
 .social li:last-child,
-.social .social__item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
 
 .social a,
-.social .social__link {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1398,12 +1402,12 @@ button,
 }
 
 .social a:hover svg,
-.social .social__link:hover svg {
+.social__link:hover svg {
   fill: #46caff;
 }
 
 .social svg,
-.social .social__icon {
+.social__icon {
   fill: #f8fdff;
 }
 
@@ -1422,14 +1426,14 @@ button,
 }
 
 .footer-nav button,
-.footer-nav .footer-nav__accordion-button {
+.footer-nav__accordion-button {
   display: none;
   border: none;
   cursor: pointer;
 }
 
 .footer-nav h2,
-.footer-nav .footer-nav__heading {
+.footer-nav__heading {
   margin: 0;
   padding: 5px 0 22px 0;
   font-weight: 400;
@@ -1442,8 +1446,8 @@ button,
 }
 
 .footer-nav ul,
-.footer-nav .footer-nav__list,
-.footer-nav .footer-nav__additional-list {
+.footer-nav__list,
+.footer-nav__additional-list {
   max-width: 220px;
   margin: 0;
   padding: 0;
@@ -1459,7 +1463,7 @@ button,
 }
 
 .footer-nav a,
-.footer-nav .footer-nav__link {
+.footer-nav__link {
   font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
@@ -1468,12 +1472,12 @@ button,
 }
 
 .footer-nav a:hover,
-.footer-nav .footer-nav__link:hover {
+.footer-nav__link:hover {
   color: #ffff00;
 }
 
 .footer-nav__additional-list-wrapper ul,
-.footer-nav__additional-list-wrapper .footer-nav__additional-list {
+.footer-nav__additional-list {
   margin-top: 42px;
 }
 
@@ -1482,14 +1486,14 @@ button,
 }
 
 .contacts button,
-.contacts .contacts__accordion-button {
+.contacts__accordion-button {
   display: none;
   border: none;
   cursor: pointer;
 }
 
 .contacts h2,
-.contacts .contacts__heading {
+.contacts__heading {
   margin: 0;
   padding: 5px 0 22px 0;
   font-weight: 400;
@@ -1502,7 +1506,7 @@ button,
 }
 
 .contacts ul,
-.contacts .contacts__list {
+.contacts__list {
   max-width: 345px;
   margin: 0;
   padding: 0;
@@ -1510,17 +1514,17 @@ button,
 }
 
 .contacts li,
-.contacts .contacts__item {
+.contacts__item {
   margin-bottom: 5px;
 }
 
 .contacts li:last-child,
-.contacts .contacts__item:last-child {
+.contacts__item:last-child {
   margin-bottom: 0;
 }
 
 .contacts a,
-.contacts .contacts__link {
+.contacts__link {
   font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
@@ -1529,12 +1533,12 @@ button,
 }
 
 .contacts a:hover,
-.contacts .contacts__link:hover {
+.contacts__link:hover {
   color: #ffff00;
 }
 
 .contacts p,
-.contacts .contacts__address-text {
+.contacts__address-text {
   margin: 0;
   font-style: normal;
   line-height: 21px;
@@ -2055,8 +2059,7 @@ button,
 
 @media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1023px) and (min-resolution: 144dpi), (min-width: 1023px) and (min-resolution: 1.5dppx) {
   .promo {
-    background: #041827 url("../img/backgrounds/bg-image-promo-desktop@2x.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/backgrounds/bg-image-promo-desktop@2x.jpg");
   }
 }
 
@@ -2067,17 +2070,17 @@ button,
   }
 
   .goods-services__list-wrapper li,
-  .goods-services__list-wrapper .goods-services__item {
+  .goods-services__item {
     background-image: url("../img/backgrounds/bg-image-offers-1-desktop@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(2n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+  .goods-services__item:nth-child(2n) {
     background-image: url("../img/backgrounds/bg-image-offers-2-desktop@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(3n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(3n) {
+  .goods-services__item:nth-child(3n) {
     background-image: url("../img/backgrounds/bg-image-offers-3-desktop@2x.jpg");
   }
 
@@ -2131,8 +2134,7 @@ button,
   .promo {
     min-height: 560px;
     margin-top: -100px;
-    background: #041827 url("../img/backgrounds/bg-image-promo-tablet.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/backgrounds/bg-image-promo-tablet.jpg");
   }
 
   .promo__wrapper {
@@ -2145,14 +2147,14 @@ button,
   }
 
   .promo h2,
-  .promo .promo__heading {
+  .promo__heading {
     padding-bottom: 0;
     font-size: 64px;
     line-height: 75px;
   }
 
   .promo p,
-  .promo .promo__text {
+  .promo__text {
     padding-bottom: 56px;
   }
 
@@ -2165,12 +2167,12 @@ button,
   }
 
   .advantages ul,
-  .advantages .advantages__list {
+  .advantages__list {
     row-gap: 29px;
   }
 
   .advantages li,
-  .advantages .advantages__item {
+  .advantages__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2183,13 +2185,13 @@ button,
   }
 
   .advantages h3,
-  .advantages .advantages__item-title {
+  .advantages__item-title {
     padding-bottom: 9px;
     line-height: 33.7px;
   }
 
   .advantages p,
-  .advantages .advantages__item-description {
+  .advantages__item-description {
     line-height: 21.6px;
   }
 
@@ -2207,7 +2209,7 @@ button,
   }
 
   .about-us p,
-  .about-us .about-us__content {
+  .about-us__content {
     padding-bottom: 21px;
     line-height: 21.5px;
   }
@@ -2217,12 +2219,12 @@ button,
   }
 
   .goods-services h2,
-  .goods-services .goods-services__heading {
+  .goods-services__heading {
     padding-bottom: 38px;
   }
 
   .goods-services__list-wrapper ul,
-  .goods-services__list-wrapper .goods-services__list {
+  .goods-services__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2234,40 +2236,41 @@ button,
   }
 
   .goods-services__list-wrapper li,
-  .goods-services__list-wrapper .goods-services__item {
+  .goods-services__item {
     width: 87.23vw;
     height: 32.55vw;
     max-width: 100%;
     max-height: 100%;
     background-color: #041827;
     background-image: url("../img/backgrounds/bg-image-offers-1-tablet.jpg");
-    background-position: no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
   }
 
   .goods-services__list-wrapper li:nth-child(2n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+  .goods-services__item:nth-child(2n) {
     background-image: url("../img/backgrounds/bg-image-offers-2-tablet.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(3n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(3n) {
+  .goods-services__item:nth-child(3n) {
     background-image: url("../img/backgrounds/bg-image-offers-3-tablet.jpg");
   }
 
   .goods-services__list-wrapper p,
-  .goods-services__link .goods-services__text {
+  .goods-services__text {
     padding: 4.8vw 7.82vw 5.21vw 5.86vw;
   }
 
   .goods-services__list-wrapper span,
-  .goods-services__list-wrapper .goods-services__icon-wrapper {
+  .goods-services__icon-wrapper {
     width: 7.81vw;
     height: 7.81vw;
   }
 
   .goods-services__list-wrapper svg,
-  .goods-services__list-wrapper .goods-services__icon {
+  .goods-services__icon {
     width: 0.7vw;
     height: 1.4vw;
   }
@@ -2304,12 +2307,12 @@ button,
   }
 
   .feedback h2,
-  .feedback .feedback__heading {
+  .feedback__heading {
     padding-bottom: 7px;
   }
 
   .feedback p,
-  .feedback .feedback__text-content {
+  .feedback__text-content {
     margin: 0;
     padding-bottom: 25px;
   }
@@ -2371,7 +2374,7 @@ button,
   }
 
   .social li:last-child > a,
-  .social .social__item:last-child > a {
+  .social__item:last-child > a {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -2390,12 +2393,12 @@ button,
   }
 
   .footer-nav__additional-list-wrapper ul,
-  .footer-nav__additional-list-wrapper .footer-nav__additional-list {
+  .footer-nav__additional-list {
     margin-top: 0;
   }
 
   .contacts h2,
-  .contacts .contacts__heading {
+  .contacts__heading {
     margin-top: 5px;
     padding: 0 0 25px 0;
   }
@@ -2420,8 +2423,7 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .promo {
-    background: #041827 url("../img/backgrounds/bg-image-promo-tablet@2x.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/backgrounds/bg-image-promo-tablet@2x.jpg");
   }
 
   .about-us__wrapper::before {
@@ -2430,17 +2432,17 @@ button,
   }
 
   .goods-services__list-wrapper li,
-  .goods-services__list-wrapper .goods-services__item {
+  .goods-services__item {
     background-image: url("../img/backgrounds/bg-image-offers-1-tablet@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(2n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+  .goods-services__item:nth-child(2n) {
     background-image: url("../img/backgrounds/bg-image-offers-2-tablet@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(3n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(3n) {
+  .goods-services__item:nth-child(3n) {
     background-image: url("../img/backgrounds/bg-image-offers-3-tablet@2x.jpg");
   }
 }
@@ -2472,8 +2474,7 @@ button,
   .promo {
     min-height: auto;
     margin-top: -70px;
-    background: #041827 url("../img/backgrounds/bg-image-promo-mobile.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/backgrounds/bg-image-promo-mobile.jpg");
   }
 
   .promo__wrapper {
@@ -2482,14 +2483,14 @@ button,
   }
 
   .promo h2,
-  .promo .promo__heading {
+  .promo__heading {
     padding-bottom: 9px;
     font-size: 36px;
     line-height: 42px;
   }
 
   .promo p,
-  .promo .promo__text {
+  .promo__text {
     padding-bottom: 46px;
     font-size: 14px;
     line-height: 21px;
@@ -2512,14 +2513,14 @@ button,
   }
 
   .advantages ul,
-  .advantages .advantages__list {
+  .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
 
   .advantages li,
-  .advantages .advantages__item {
+  .advantages__item {
     display: block;
     min-height: 340px;
     padding: 30px 30px 35px 30px;
@@ -2527,34 +2528,34 @@ button,
 
   .advantages li:nth-child(3n),
   .advantages li:nth-child(4n),
-  .advantages .advantages__item:nth-child(3n),
-  .advantages .advantages__item:nth-child(4n) {
+  .advantages__item:nth-child(3n),
+  .advantages__item:nth-child(4n) {
     min-height: 325px;
   }
 
   .advantages li:nth-child(3n) > h3,
   .advantages li:nth-child(4n) > h3,
-  .advantages .advantages__item:nth-child(3n) > h3,
-  .advantages .advantages__item:nth-child(4n) > h3 {
+  .advantages__item:nth-child(3n) > h3,
+  .advantages__item:nth-child(4n) > h3 {
     padding-bottom: 15px;
   }
 
   .advantages h3,
-  .advantages .advantages__item-title {
+  .advantages__item-title {
     padding-bottom: 7px;
     font-size: 20px;
     line-height: 140%;
   }
 
   .advantages p,
-  .advantages .advantages__item-description {
+  .advantages__item-description {
     min-height: 140px;
     font-size: 14px;
     line-height: 19px;
   }
 
   .advantages svg,
-  .advantages .advantages__icon {
+  .advantages__icon {
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
@@ -2583,7 +2584,7 @@ button,
   }
 
   .about-us p,
-  .about-us .about-us__content {
+  .about-us__content {
     padding-bottom: 18px;
     font-size: 14px;
     line-height: 18.8px;
@@ -2610,12 +2611,12 @@ button,
   }
 
   .goods-services h2,
-  .goods-services .goods-services__heading {
+  .goods-services__heading {
     padding-bottom: 29px;
   }
 
   .goods-services__list-wrapper ul,
-  .goods-services__list-wrapper .goods-services__list {
+  .goods-services__list {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2623,35 +2624,36 @@ button,
   }
 
   .goods-services__list-wrapper li,
-  .goods-services__list-wrapper .goods-services__item {
+  .goods-services__item {
     width: 84.38vw;
     height: 78.13vw;
     max-width: 100%;
     max-height: 100%;
     background-color: #041827;
     background-image: url("../img/backgrounds/bg-image-offers-1-mobile.jpg");
-    background-position: no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
   }
 
   .goods-services__list-wrapper li:nth-child(2n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+  .goods-services__item:nth-child(2n) {
     background-image: url("../img/backgrounds/bg-image-offers-2-mobile.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(3n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(3n) {
+  .goods-services__item:nth-child(3n) {
     background-image: url("../img/backgrounds/bg-image-offers-3-mobile.jpg");
   }
 
   .goods-services__list-wrapper p,
-  .goods-services__link .goods-services__text {
+  .goods-services__text {
     padding: 8vw 12.5vw 9.38vw 9.38vw;
     font-size: 18px;
   }
 
   .goods-services__list-wrapper span,
-  .goods-services__list-wrapper .goods-services__icon-wrapper {
+  .goods-services__icon-wrapper {
     min-width: 40px;
     min-height: 40px;
     width: 12.5vw;
@@ -2659,7 +2661,7 @@ button,
   }
 
   .goods-services__list-wrapper svg,
-  .goods-services__list-wrapper .goods-services__icon {
+  .goods-services__icon {
     width: 1.3vw;
     height: 2.6vw;
   }
@@ -2670,14 +2672,14 @@ button,
   }
 
   .feedback h2,
-  .feedback .feedback__heading {
+  .feedback__heading {
     padding-bottom: 10px;
     font-size: 30px;
     line-height: 140%;
   }
 
   .feedback p,
-  .feedback .feedback__text-content {
+  .feedback__text-content {
     padding-bottom: 35px;
     font-size: 14px;
     line-height: 18px;
@@ -2780,7 +2782,7 @@ button,
   }
 
   .social ul,
-  .social .social__list {
+  .social__list {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2790,22 +2792,6 @@ button,
 
   .footer-nav {
     padding-bottom: 20px;
-  }
-
-  .footer-nav--closed {
-    padding-bottom: 0;
-  }
-
-  .footer-nav--closed .footer-nav__accordion-button {
-    background-image: url("../img/sprite/icon-plus.svg");
-  }
-
-  .footer-nav--closed .footer-nav__list {
-    display: none;
-  }
-
-  .footer-nav--closed .footer-nav__additional-list {
-    display: none;
   }
 
   .footer-nav::before {
@@ -2818,7 +2804,7 @@ button,
   }
 
   .footer-nav button,
-  .footer-nav .footer-nav__accordion-button {
+  .footer-nav__accordion-button {
     position: absolute;
     top: 20px;
     right: 0;
@@ -2831,13 +2817,13 @@ button,
   }
 
   .footer-nav h2,
-  .footer-nav .footer-nav__heading {
+  .footer-nav__heading {
     position: relative;
     padding: 20px 0;
   }
 
   .footer-nav a,
-  .footer-nav .footer-nav__link {
+  .footer-nav__link {
     font-size: 14px;
     line-height: 19px;
   }
@@ -2852,20 +2838,8 @@ button,
     background-color: rgba(255, 255, 255, 0.65);
   }
 
-  .contacts--closed {
-    padding-bottom: 0;
-  }
-
-  .contacts--closed .contacts__accordion-button {
-    background-image: url("../img/sprite/icon-plus.svg");
-  }
-
-  .contacts--closed .contacts__list {
-    display: none;
-  }
-
   .contacts button,
-  .contacts .contacts__accordion-button {
+  .contacts__accordion-button {
     position: absolute;
     top: 20px;
     right: 0;
@@ -2878,25 +2852,42 @@ button,
   }
 
   .contacts h2,
-  .contacts .contacts__heading {
+  .contacts__heading {
     position: relative;
     padding: 20px 0 15px 0;
   }
 
   .contacts ul,
-  .contacts .contacts__list {
+  .contacts__list {
     margin-bottom: 20px;
   }
 
   .contacts li:first-child,
-  .contacts .contacts__item:first-child {
+  .contacts__item:first-child {
     margin-bottom: 15px;
   }
 
   .contacts a,
-  .contacts .contacts__link {
+  .contacts__link {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .accordion--closed {
+    padding-bottom: 0;
+  }
+
+  .accordion--closed .accordion__button {
+    background-image: url("../img/sprite/icon-plus.svg");
+  }
+
+  .accordion--closed ul {
+    display: none;
+  }
+
+  .accordion--closed h2 {
+    margin-top: 0;
+    padding: 20px 0 20px 0;
   }
 
   .btn--promo {
@@ -2937,29 +2928,28 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .promo {
-    background: #041827 url("../img/backgrounds/bg-image-promo-mobile@2x.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/backgrounds/bg-image-promo-mobile@2x.jpg");
   }
 
   .goods-services__list-wrapper li,
-  .goods-services__list-wrapper .goods-services__item {
+  .goods-services__item {
     background-image: url("../img/backgrounds/bg-image-offers-1-mobile@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(2n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(2n) {
+  .goods-services__item:nth-child(2n) {
     background-image: url("../img/backgrounds/bg-image-offers-2-mobile@2x.jpg");
   }
 
   .goods-services__list-wrapper li:nth-child(3n),
-  .goods-services__list-wrapper .goods-services__item:nth-child(3n) {
-    background: #041827 url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg");
+  .goods-services__item:nth-child(3n) {
+    background-image: url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg");
   }
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
   .footer-nav h2::after,
-  .footer-nav .footer-nav__heading::after {
+  .footer-nav__heading::after {
     content: "";
     position: absolute;
     top: 20px;
@@ -2967,11 +2957,6 @@ button,
     width: 15px;
     height: 15px;
     background-image: url("../img/sprite/icon-minus.svg");
-  }
-
-  .contacts--closed .contacts__heading {
-    margin-top: 0;
-    padding: 20px 0 20px 0;
   }
 }
 

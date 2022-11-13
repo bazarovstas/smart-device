@@ -42,7 +42,7 @@
 }
 
 .goods-services h2,
-.goods-services .goods-services__heading {
+.goods-services__heading {
   margin: 0;
   padding-bottom: 52px;
 
@@ -64,7 +64,7 @@
 }
 
 .goods-services__list-wrapper ul,
-.goods-services__list-wrapper .goods-services__list {
+.goods-services__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -88,7 +88,7 @@
 }
 
 .goods-services__list-wrapper li,
-.goods-services__list-wrapper .goods-services__item {
+.goods-services__item {
   position: relative;
   width: 18.2vw;
   height: 34vw;
@@ -99,7 +99,8 @@
 
   background-color: $color-default-black;
   background-image: url("../img/backgrounds/bg-image-offers-1-desktop.jpg");
-  background-position: no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
 
   @media (min-width: $vp-1024) {
@@ -149,7 +150,8 @@
 
     background-color: $color-default-black;
     background-image: url("../img/backgrounds/bg-image-offers-1-tablet.jpg");
-    background-position: no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
 
     @include retina {
@@ -181,7 +183,8 @@
 
     background-color: $color-default-black;
     background-image: url("../img/backgrounds/bg-image-offers-1-mobile.jpg");
-    background-position: no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
 
     @include retina {
@@ -200,19 +203,19 @@
       background-image: url("../img/backgrounds/bg-image-offers-3-mobile.jpg");
 
       @include retina {
-        background: $color-default-black url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg");
+        background-image: url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg");
       }
     }
   }
 }
 
 .goods-services__list-wrapper a,
-.goods-services__list-wrapper .goods-services__link {
+.goods-services__link {
   position: relative;
 }
 
 .goods-services__list-wrapper p,
-.goods-services__link .goods-services__text {
+.goods-services__text {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -238,7 +241,7 @@
 }
 
 .goods-services__list-wrapper span,
-.goods-services__list-wrapper .goods-services__icon-wrapper {
+.goods-services__icon-wrapper {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -267,7 +270,7 @@
 }
 
 .goods-services__list-wrapper svg,
-.goods-services__list-wrapper .goods-services__icon {
+.goods-services__icon {
   width: 0.35vw;
   height: 0.7vw;
 

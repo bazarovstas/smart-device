@@ -1,9 +1,15 @@
 import IMask from 'imask';
 
-const phoneInput = document.querySelector('[data-validate-phone]');
+const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
-const initMask = new IMask(phoneInput, {
-  mask: '+7(000)000-00-00',
-});
+function initMask() {
+  if (phoneInputs) {
+    phoneInputs.forEach(
+        (inputField) => new IMask(inputField, {
+          mask: '+7(000)000-00-00',
+        })
+    );
+  }
+}
 
 export {initMask};

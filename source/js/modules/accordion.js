@@ -1,11 +1,22 @@
 function toggleAccordion() {
 
-  const accordionNavigation = document.querySelector('[data-accordion="1"]');
-  const accordionContacts = document.querySelector('[data-accordion="2"]');
-  // const buttons = document.querySelectorAll('[data-accordion-button]');
+  const accordions = document.querySelectorAll('[data-accordion]');
+  const buttons = document.querySelectorAll('[data-accordion-button]');
 
-  accordionNavigation.classList.add('footer-nav--closed');
-  accordionContacts.classList.add('contacts--closed');
+  accordions.forEach((item) => item.classList.add('accordion--closed'));
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const accordion = button.parentNode.parentNode;
+
+      if (!accordion.classList.contains('accordion--closed')) {
+        accordion.classList.add('accordion--closed');
+      } else {
+        accordions.forEach((item) => item.classList.add('accordion--closed'));
+        accordion.classList.remove('accordion--closed');
+      }
+    });
+  });
 }
 
 export {toggleAccordion};

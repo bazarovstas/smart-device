@@ -29,7 +29,7 @@
 }
 
 .advantages ul,
-.advantages .advantages__list {
+.advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
@@ -51,7 +51,7 @@
 }
 
 .advantages li,
-.advantages .advantages__item {
+.advantages__item {
   position: relative;
   padding: 40px 45px 35px 45px;
 
@@ -108,7 +108,7 @@
 }
 
 .advantages h3,
-.advantages .advantages__item-title {
+.advantages__item-title {
   margin: 0;
   padding-bottom: 13px;
 
@@ -132,7 +132,7 @@
 }
 
 .advantages p,
-.advantages .advantages__item-description {
+.advantages__item-description {
   min-height: 120px;
   margin: 0;
 
@@ -155,7 +155,7 @@
 }
 
 .advantages svg,
-.advantages .advantages__icon {
+.advantages__icon {
   margin-bottom: 15px;
 
   fill: $color-deep-sky-blue;

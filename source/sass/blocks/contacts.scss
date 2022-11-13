@@ -12,25 +12,6 @@
 
       background-color: $transparent-white-0-7;
     }
-
-    &--closed {
-      padding-bottom: 0;
-
-      .contacts__accordion-button {
-        background-image: url("../img/sprite/icon-plus.svg");
-      }
-
-      .contacts__list {
-        display: none;
-      }
-
-      .contacts__heading {
-        @media (max-width: $vp-767) {
-          margin-top: 0;
-          padding: 20px 0 20px 0;
-        }
-      }
-    }
   }
 }
 
@@ -39,7 +20,7 @@
 }
 
 .contacts button,
-.contacts .contacts__accordion-button {
+.contacts__accordion-button {
   display: none;
 
   border: none;
@@ -60,7 +41,7 @@
 }
 
 .contacts h2,
-.contacts .contacts__heading {
+.contacts__heading {
   margin: 0;
   padding: 5px 0 22px 0;
 
@@ -85,7 +66,7 @@
 }
 
 .contacts ul,
-.contacts .contacts__list {
+.contacts__list {
   max-width: 345px;
   margin: 0;
   padding: 0;
@@ -98,7 +79,7 @@
 }
 
 .contacts li,
-.contacts .contacts__item {
+.contacts__item {
   margin-bottom: 5px;
 
   &:last-child {
@@ -113,7 +94,7 @@
 }
 
 .contacts a,
-.contacts .contacts__link {
+.contacts__link {
   font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
@@ -131,7 +112,7 @@
 }
 
 .contacts p,
-.contacts .contacts__address-text {
+.contacts__address-text {
   margin: 0;
 
   font-style: normal;
