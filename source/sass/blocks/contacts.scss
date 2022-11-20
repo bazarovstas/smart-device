@@ -15,31 +15,6 @@
   }
 }
 
-.contacts__button-wrapper {
-  position: relative;
-}
-
-.contacts button,
-.contacts__accordion-button {
-  display: none;
-
-  border: none;
-  cursor: pointer;
-
-  @media (max-width: $vp-767) {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-minus.svg");
-
-    display: block;
-    z-index: 1;
-  }
-}
-
 .contacts h2,
 .contacts__heading {
   margin: 0;
@@ -62,6 +37,8 @@
   @media (max-width: $vp-767) {
     position: relative;
     padding: 20px 0 15px 0;
+
+    cursor: pointer;
   }
 }
 

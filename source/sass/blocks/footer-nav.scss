@@ -24,31 +24,6 @@
   }
 }
 
-.footer-nav__button-wrapper {
-  position: relative;
-}
-
-.footer-nav button,
-.footer-nav__accordion-button {
-  display: none;
-
-  border: none;
-  cursor: pointer;
-
-  @media (max-width: $vp-767) {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-minus.svg");
-
-    display: block;
-    z-index: 1;
-  }
-}
-
 .footer-nav h2,
 .footer-nav__heading {
   margin: 0;
@@ -67,17 +42,7 @@
     position: relative;
     padding: 20px 0;
 
-    @media (max-width: $vp-767) {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 20px;
-        right: 0;
-        width: 15px;
-        height: 15px;
-        background-image: url("../img/sprite/icon-minus.svg");
-      }
-    }
+    cursor: pointer;
   }
 }
 

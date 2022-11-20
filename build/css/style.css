@@ -1428,17 +1428,6 @@ button,
   margin-left: 33px;
 }
 
-.footer-nav__button-wrapper {
-  position: relative;
-}
-
-.footer-nav button,
-.footer-nav__accordion-button {
-  display: none;
-  border: none;
-  cursor: pointer;
-}
-
 .footer-nav h2,
 .footer-nav__heading {
   margin: 0;
@@ -1486,17 +1475,6 @@ button,
 .footer-nav__additional-list-wrapper ul,
 .footer-nav__additional-list {
   margin-top: 42px;
-}
-
-.contacts__button-wrapper {
-  position: relative;
-}
-
-.contacts button,
-.contacts__accordion-button {
-  display: none;
-  border: none;
-  cursor: pointer;
 }
 
 .contacts h2,
@@ -1549,6 +1527,12 @@ button,
   margin: 0;
   font-style: normal;
   line-height: 21px;
+}
+
+.accordion__button {
+  display: none;
+  border: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -2843,23 +2827,11 @@ button,
     background-color: rgba(255, 255, 255, 0.65);
   }
 
-  .footer-nav button,
-  .footer-nav__accordion-button {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-minus.svg");
-    display: block;
-    z-index: 1;
-  }
-
   .footer-nav h2,
   .footer-nav__heading {
     position: relative;
     padding: 20px 0;
+    cursor: pointer;
   }
 
   .footer-nav a,
@@ -2878,23 +2850,11 @@ button,
     background-color: rgba(255, 255, 255, 0.65);
   }
 
-  .contacts button,
-  .contacts__accordion-button {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-color: transparent;
-    background-image: url("../img/sprite/icon-minus.svg");
-    display: block;
-    z-index: 1;
-  }
-
   .contacts h2,
   .contacts__heading {
     position: relative;
     padding: 20px 0 15px 0;
+    cursor: pointer;
   }
 
   .contacts ul,
@@ -2911,6 +2871,17 @@ button,
   .contacts__link {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .accordion__button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    background-image: url("../img/sprite/icon-minus.svg");
+    display: block;
   }
 
   .accordion--closed {
@@ -2984,19 +2955,6 @@ button,
   .goods-services__list-wrapper li:nth-child(3n),
   .goods-services__item:nth-child(3n) {
     background-image: url("../img/backgrounds/bg-image-offers-3-mobile@2x.jpg");
-  }
-}
-
-@media (max-width: 767px) and (max-width: 767px) {
-  .footer-nav h2::after,
-  .footer-nav__heading::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-image: url("../img/sprite/icon-minus.svg");
   }
 }
 
