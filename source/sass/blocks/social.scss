@@ -13,13 +13,20 @@
 .social ul,
 .social__list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 215px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
+  @media (max-width: $vp-1023) {
+    max-width: 430px;
+  }
+
   @media (max-width: $vp-767) {
     justify-content: center;
+    max-width: 100%;
     margin-right: 12px;
     padding-bottom: 25px;
   }
@@ -31,12 +38,30 @@
   height: 40px;
   margin-left: 12px;
 
-  &:last-child {
-    margin-right: 0;
+  &:nth-child(4n) > a {
+    justify-content: flex-end;
+
+    @media (max-width: $vp-1023) {
+      justify-content: center;
+    }
+
+    @media (max-width: $vp-767) {
+      justify-content: center;
+    }
   }
 
-  &:last-child > a {
+  &:nth-child(8n) > a {
     @media (max-width: $vp-1023) {
+      justify-content: flex-end;
+    }
+
+    @media (max-width: $vp-767) {
+      justify-content: center;
+    }
+  }
+
+  &:nth-child(11n) > a {
+    @media (max-width: $vp-767) {
       justify-content: flex-end;
     }
   }

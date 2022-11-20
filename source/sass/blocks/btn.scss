@@ -26,7 +26,9 @@
   }
 
   &--main-header {
-    height: 40px;
+    flex-wrap: wrap;
+    max-width: 250px;
+    min-height: 40px;
 
     font-family: $ff-roboto-condensed;
     font-weight: 700;

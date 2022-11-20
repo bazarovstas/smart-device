@@ -197,7 +197,7 @@
                       <label class="visually-hidden" for="form-name-field">Впишите имя</label>
                     </div>
                     <div class="feedback-form__phone">
-                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" data-validate-phone required>
+                      <input id="form-phone-field" name="feedback-form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\+7\s?\(\d{3}\)\s?\d{3}\s?\d{2}\s?\d{2}$" required>
                       <label class="visually-hidden" for="form-phone-field">Впишите ваш номер телефона</label>
                     </div>
                     <div class="feedback-form__question">
@@ -360,7 +360,7 @@
                 <label class="visually-hidden" for="modal-form-name-field">Впишите имя</label>
               </div>
               <div class="modal-form__phone">
-                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" data-validate-phone required>
+                <input id="modal-form-phone-field" name="modal-form-phone" type="tel" placeholder="Телефон" data-validate-phone pattern="^\+7\s?\(\d{3}\)\s?\d{3}\s?\d{2}\s?\d{2}$" required>
                 <label class="visually-hidden" for="modal-form-phone-field">Впишите ваш номер телефона</label>
               </div>
               <div class="modal-form__question">
