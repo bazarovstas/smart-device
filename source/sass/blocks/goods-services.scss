@@ -65,32 +65,31 @@
 
 .goods-services__list-wrapper ul,
 .goods-services__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 4.3vw;
-  row-gap: 4.3vw;
+  gap: 85px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   @media (max-width: $vp-1023) {
-    flex-direction: column;
-    column-gap: 0;
-    row-gap: 3.91vw;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
   @media (max-width: $vp-767) {
+    display: flex;
     align-items: center;
-    row-gap: 9.38vw;
   }
 }
 
 .goods-services__list-wrapper li,
 .goods-services__item {
   position: relative;
-  width: 18.2vw;
+  width: auto;
   height: 34vw;
   max-width: 350px;
   max-height: 650px;
@@ -176,8 +175,8 @@
   }
 
   @media (max-width: $vp-767) {
-    width: 84.38vw;
-    height: 78.13vw;
+    min-width: 270px;
+    min-height: 250px;
     max-width: 100%;
     max-height: 100%;
 
@@ -251,21 +250,12 @@
 
   min-width: 60px;
   min-height: 60px;
-  width: 3.13vw;
-  height: 3.13vw;
 
   background-color: $color-deep-sky-blue;
-
-  @media (max-width: $vp-1023) {
-    width: 7.81vw;
-    height: 7.81vw;
-  }
 
   @media (max-width: $vp-767) {
     min-width: 40px;
     min-height: 40px;
-    width: 12.5vw;
-    height: 12.5vw;
   }
 }
 
@@ -279,10 +269,5 @@
   @media (max-width: $vp-1023) {
     width: 0.7vw;
     height: 1.4vw;
-  }
-
-  @media (max-width: $vp-767) {
-    width: 1.3vw;
-    height: 2.6vw;
   }
 }

@@ -37,6 +37,11 @@
     background: url("../img/backgrounds/paper-airplane-desktop.png") no-repeat;
     background-size: contain;
 
+    @media (max-width: 1200px) {
+      left: auto;
+      right: 680px;
+    }
+
     @media (max-width: $vp-1023) {
       display: none;
     }
