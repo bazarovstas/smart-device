@@ -44,7 +44,7 @@
   grid-column: 1 / 2;
 
   max-height: 185px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   transition: $trans-default;
 
   &:hover {
@@ -87,6 +87,9 @@
 }
 
 .modal-form__question textarea {
+  max-height: 155px;
+  padding-top: 25px;
+
   background-color: $transparent-black-0-15;
 }
 

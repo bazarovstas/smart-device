@@ -626,30 +626,35 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #041827), to(rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(top, #041827 85%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(to bottom, #041827 85%, rgba(255, 255, 255, 0) 100%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-header__wrapper {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fill, minmax(150px, max-content));
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-column-gap: 120px;
-  -moz-column-gap: 120px;
-  column-gap: 120px;
-  row-gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 80px;
 }
 
-.main-header__wrapper > * {
+.main-header__nav-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 29% 43% 25%;
+  grid-template-columns: 29% 43% 25%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 20px;
+  width: 100%;
+  margin-left: 12%;
+}
+
+.main-header__nav-wrapper > * {
   justify-self: flex-start;
 }
 
@@ -1088,7 +1093,6 @@ button,
   left: 18%;
   width: 27vw;
   height: 15vw;
-  z-index: 1;
   background: url("../img/backgrounds/paper-airplane-desktop.png") no-repeat;
   background-size: contain;
 }
@@ -1113,7 +1117,7 @@ button,
 
 .feedback__flex-container {
   margin-right: 5px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feedback h2,
@@ -1782,11 +1786,11 @@ button,
 .modal__heading {
   max-width: 420px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 30px;
   color: #ffffff;
   cursor: default;
 }
@@ -1794,7 +1798,7 @@ button,
 .modal__text-content {
   width: auto;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
   font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
@@ -1883,7 +1887,7 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   max-height: 185px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1963,6 +1967,8 @@ button,
 }
 
 .modal-form__question textarea {
+  max-height: 155px;
+  padding-top: 25px;
   background-color: rgba(4, 20, 39, 0.15);
 }
 
@@ -2098,6 +2104,10 @@ button,
   }
 
   .main-header__wrapper {
+    padding: 0 50px;
+  }
+
+  .main-header__nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2113,7 +2123,6 @@ button,
     -moz-column-gap: 0;
     column-gap: 0;
     row-gap: 15px;
-    padding: 0 50px;
   }
 
   .main-header__logo-wrapper {
@@ -2461,10 +2470,13 @@ button,
   }
 
   .main-header__wrapper {
+    padding: 0 25px;
+  }
+
+  .main-header__nav-wrapper {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    padding: 0 25px;
   }
 
   .main-header__phone-wrapper {
@@ -2620,7 +2632,7 @@ button,
 
   .goods-services h2,
   .goods-services__heading {
-    padding-bottom: 29px;
+    padding-bottom: 14px;
   }
 
   .goods-services__list-wrapper ul,
@@ -2635,6 +2647,7 @@ button,
 
   .goods-services__list-wrapper li,
   .goods-services__item {
+    width: 100%;
     min-width: 270px;
     min-height: 250px;
     max-width: 100%;
@@ -2830,7 +2843,7 @@ button,
   .footer-nav h2,
   .footer-nav__heading {
     position: relative;
-    padding: 20px 0;
+    padding: 22px 0;
     cursor: pointer;
   }
 
@@ -2853,7 +2866,8 @@ button,
   .contacts h2,
   .contacts__heading {
     position: relative;
-    padding: 20px 0 15px 0;
+    margin-top: 0;
+    padding: 22px 0 15px 0;
     cursor: pointer;
   }
 
@@ -2897,8 +2911,7 @@ button,
   }
 
   .accordion--closed h2 {
-    margin-top: 0;
-    padding: 20px 0 20px 0;
+    padding: 22px 0 22px 0;
   }
 
   .btn--promo {
@@ -2916,6 +2929,10 @@ button,
     max-width: 55.56%;
     min-width: 160px;
     padding: 8px 15px;
+  }
+
+  .checkbox label {
+    padding-left: 5px;
   }
 
   .modal--fit-content .modal__content {

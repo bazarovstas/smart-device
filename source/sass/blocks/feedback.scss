@@ -32,7 +32,6 @@
     left: 18%;
     width: 27vw;
     height: 15vw;
-    z-index: 1;
 
     background: url("../img/backgrounds/paper-airplane-desktop.png") no-repeat;
     background-size: contain;
@@ -84,7 +83,7 @@
 
 .feedback__flex-container {
   margin-right: 5px;
-  z-index: 2;
+  z-index: 1;
 
   @media (max-width: $vp-1023) {
     width: 100%;
