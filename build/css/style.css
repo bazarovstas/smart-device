@@ -1027,7 +1027,8 @@ button,
 
 .goods-services__list-wrapper a,
 .goods-services__link {
-  position: relative;
+  display: block;
+  height: 100%;
 }
 
 .goods-services__list-wrapper p,
@@ -1535,6 +1536,7 @@ button,
 
 .accordion__button {
   display: none;
+  padding: 0;
   border: none;
   cursor: pointer;
 }
@@ -2681,6 +2683,12 @@ button,
     min-height: 40px;
   }
 
+  .goods-services__list-wrapper svg,
+  .goods-services__icon {
+    width: 1.5vw;
+    height: 2vw;
+  }
+
   .feedback__wrapper {
     margin: 0 0 12%;
     padding: 46px 25px 50px 25px;
@@ -2891,11 +2899,13 @@ button,
     position: absolute;
     top: 20px;
     right: 0;
+    display: block;
     width: 15px;
     height: 15px;
     background-color: transparent;
     background-image: url("../img/sprite/icon-minus.svg");
-    display: block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .accordion--closed {
@@ -2904,6 +2914,8 @@ button,
 
   .accordion--closed .accordion__button {
     background-image: url("../img/sprite/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .accordion--closed ul {

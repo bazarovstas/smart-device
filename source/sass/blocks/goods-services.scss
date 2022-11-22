@@ -211,7 +211,8 @@
 
 .goods-services__list-wrapper a,
 .goods-services__link {
-  position: relative;
+  display: block;
+  height: 100%;
 }
 
 .goods-services__list-wrapper p,
@@ -270,5 +271,10 @@
   @media (max-width: $vp-1023) {
     width: 0.7vw;
     height: 1.4vw;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 1.5vw;
+    height: 2vw;
   }
 }
